@@ -1,0 +1,1095 @@
+{
+  "adoption_papers_essence": {
+    "values": [
+      7,
+      77
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "ancient_lizard_blade_essence": {
+    "values": [
+      40,
+      8,
+      2,
+      0
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "anthropology_degree_essence": {
+    "values": [
+      9,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "bag_of_holding_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "barrel_o_dwarves_essence": {
+    "values": [
+      7,
+      17
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "birdhouse_essence": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "black_cat_essence": {
+    "values": [
+      13,
+      13
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "black_pepper_essence": {
+    "values": [
+      10
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "blue_pepper_essence": {
+    "values": [
+      30,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "blue_suits_essence": {
+    "values": [
+      4,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "booster_pack_essence": {
+    "values": [
+      2,
+      12,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "bowling_ball_essence": {
+    "values": [
+      20,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "brown_pepper_essence": {
+    "values": [
+      10
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "capsule_machine_essence": {
+    "values": [
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "cardboard_box_essence": {
+    "values": [
+      12,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "checkered_flag_essence": {
+    "values": [
+      7,
+      0
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "chicken_coop_essence": {
+    "values": [
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "chili_powder_essence": {
+    "values": [
+      0,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "cleaning_rag_essence": {
+    "values": [
+      5,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "clear_sky_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "coffee_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "coin_on_a_string_essence": {
+    "values": [
+      10,
+      10
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "comfy_pillow_essence": {
+    "values": [
+      2,
+      2,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "compost_heap_essence": {
+    "values": [
+      2,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "conveyor_belt_essence": {
+    "values": [
+      5,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "copycat_essence": {
+    "values": [
+      5,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "credit_card_essence": {
+    "values": [
+      27
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "cursed_katana_essence": {
+    "values": [
+      2,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "cyan_pepper_essence": {
+    "values": [
+      30,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "dark_humor_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "devils_deal_essence": {
+    "values": [
+      33
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "dishwasher_essence": {
+    "values": [
+      18,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "dwarven_anvil_essence": {
+    "values": [
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "egg_carton_essence": {
+    "values": [
+      12,
+      12
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "fertilizer_essence": {
+    "values": [],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "fifth_ace_essence": {
+    "values": [
+      4,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "fish_bowl_essence": {
+    "values": [
+      10,
+      10
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "flush_essence": {
+    "values": [
+      5,
+      20
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "four_leaf_clover_essence": {
+    "values": [
+      15,
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "frozen_pizza_essence": {
+    "values": [
+      5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "fruit_basket_essence": {
+    "values": [
+      5,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "frying_pan_essence": {
+    "values": [
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "golden_carrot_essence": {
+    "values": [
+      1,
+      7
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "goldilocks_essence": {
+    "values": [
+      3,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "grave_robber_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "gray_pepper_essence": {
+    "values": [
+      30
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "green_pepper_essence": {
+    "values": [
+      30,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "guillotine_essence": {
+    "values": [
+      1000000000
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "happy_hour_essence": {
+    "values": [
+      3,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "holy_water_essence": {
+    "values": [
+      6,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "horseshoe_essence": {
+    "values": [
+      30,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "jackolantern_essence": {
+    "values": [
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "kyle_the_kernite_essence": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lefty_the_rabbit_essence": {
+    "values": [
+      6,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lemon_essence": {
+    "values": [
+      4,
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lime_pepper_essence": {
+    "values": [
+      30
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lint_roller_essence": {
+    "values": [
+      6,
+      20
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lockpick_essence": {
+    "values": [
+      3,
+      100
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "looting_glove_essence": {
+    "values": [
+      3.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lucky_carrot_essence": {
+    "values": [
+      1,
+      15
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lucky_cat_essence": {
+    "values": [
+      3,
+      2.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lucky_dice_essence": {
+    "values": [
+      10,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lucky_seven_essence": {
+    "values": [
+      7
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "lunchbox_essence": {
+    "values": [
+      7,
+      33
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "maxwell_the_bear_essence": {
+    "values": [
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "mining_pick_essence": {
+    "values": [
+      5,
+      50
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "mobius_strip_essence": {
+    "values": [
+      7,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "ninja_and_mouse_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "nori_the_rabbit_essence": {
+    "values": [
+      4,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "oil_can_essence": {
+    "values": [
+      7,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "oswald_the_monkey_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "piggy_bank_essence": {
+    "values": [
+      2,
+      25,
+      152
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "pink_pepper_essence": {
+    "values": [
+      20
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "pizza_the_cat_essence": {
+    "values": [
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "pool_ball_essence": {
+    "values": [
+      60,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "popsicle_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "protractor_essence": {
+    "values": [
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "purple_pepper_essence": {
+    "values": [
+      50,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "quigley_the_wolf_essence": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "quiver_essence": {
+    "values": [
+      0,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "rain_cloud_essence": {
+    "values": [
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "recycling_essence": {
+    "values": [
+      0,
+      5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "red_pepper_essence": {
+    "values": [
+      50
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "red_suits_essence": {
+    "values": [
+      4,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "reroll_essence": {
+    "values": [
+      2,
+      3,
+      10
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "ricky_the_banana_essence": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "ritual_candle_essence": {
+    "values": [
+      6,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "rusty_gear_essence": {
+    "values": [
+      3,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "shattered_mirror_essence": {
+    "values": [
+      7,
+      1,
+      77
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "shedding_season_essence": {
+    "values": [
+      100,
+      5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "shrine_essence": {
+    "values": [
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "sunglasses_essence": {
+    "values": [
+      5,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "swapping_device_essence": {
+    "values": [
+      7,
+      2,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "swear_jar_essence": {
+    "values": [
+      25,
+      50
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "symbol_bomb_big_essence": {
+    "values": [
+      4,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "symbol_bomb_quantum_essence": {
+    "values": [
+      3,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "symbol_bomb_small_essence": {
+    "values": [
+      2,
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "symbol_bomb_very_big_essence": {
+    "values": [
+      8,
+      4
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "tax_evasion_essence": {
+    "values": [
+      25
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "telescope_essence": {
+    "values": [
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "time_machine_essence": {
+    "values": [
+      2,
+      0
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "treasure_map_essence": {
+    "values": [
+      33
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "triple_coins_essence": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "turtle_and_rabbit_essence": {
+    "values": [
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "undertaker_essence": {
+    "values": [
+      4,
+      2
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "void_party_essence": {
+    "values": [
+      5,
+      1.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "void_portal_essence": {
+    "values": [
+      1
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "wanted_poster_essence": {
+    "values": [
+      2.5
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "watering_can_essence": {
+    "values": [
+      20
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "white_pepper_essence": {
+    "values": [
+      30,
+      3
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "x_ray_machine_essence": {
+    "values": [],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "yellow_pepper_essence": {
+    "values": [
+      20
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  },
+  "zaroffs_contract_essence": {
+    "values": [
+      50
+    ],
+    "rarity": "essence",
+    "groups": [
+      "essence"
+    ]
+  }
+}

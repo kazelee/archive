@@ -1,0 +1,2 @@
+Do NOT use comment in mod scripts!
+MOD 脚本不要使用注释！

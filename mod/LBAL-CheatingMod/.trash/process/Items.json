@@ -1,0 +1,843 @@
+{
+  "adoption_papers": {
+    "values": [
+      3
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "ancient_lizard_blade": {
+    "values": [
+      9,
+      1,
+      2,
+      0
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "anthropology_degree": {
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "bag_of_holding": {
+    "values": [],
+    "rarity": "rare",
+    "groups": []
+  },
+  "barrel_o_dwarves": {
+    "values": [
+      7
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "birdhouse": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "black_cat": {
+    "values": [
+      9,
+      13,
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "black_pepper": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "blue_pepper": {
+    "values": [
+      3,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "blue_suits": {
+    "values": [
+      7
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "booster_pack": {
+    "values": [
+      4,
+      3,
+      1
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "bowling_ball": {
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "brown_pepper": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "capsule_machine": {
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "cardboard_box": {
+    "values": [
+      1,
+      10
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "checkered_flag": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "chicken_coop": {
+    "values": [
+      3,
+      3,
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "chili_powder": {
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "cleaning_rag": {
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "clear_sky": {
+    "values": [],
+    "rarity": "rare",
+    "groups": []
+  },
+  "coffee": {
+    "values": [],
+    "rarity": "rare",
+    "groups": []
+  },
+  "coin_on_a_string": {
+    "values": [
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "comfy_pillow": {
+    "values": [
+      1,
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "compost_heap": {
+    "values": [
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "conveyor_belt": {
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "copycat": {
+    "values": [],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "credit_card": {
+    "values": [
+      7,
+      17
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "cursed_katana": {
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "cyan_pepper": {
+    "values": [
+      3,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "dark_humor": {
+    "values": [
+      1,
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "devils_deal": {
+    "values": [
+      6
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "dishwasher": {
+    "values": [
+      1,
+      12
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "dwarven_anvil": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "egg_carton": {
+    "values": [
+      1,
+      6
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "fertilizer": {
+    "values": [
+      50
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "fifth_ace": {
+    "values": [
+      1,
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "fish_bowl": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "flush": {
+    "values": [
+      12
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "four_leaf_clover": {
+    "values": [
+      4
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "frozen_pizza": {
+    "values": [
+      2
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "fruit_basket": {
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "frying_pan": {
+    "values": [],
+    "rarity": "common",
+    "groups": []
+  },
+  "golden_carrot": {
+    "values": [
+      5,
+      5
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "goldilocks": {
+    "values": [
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "grave_robber": {
+    "values": [
+      66
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "gray_pepper": {
+    "values": [
+      6
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "green_pepper": {
+    "values": [
+      3,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "guillotine": {
+    "values": [],
+    "rarity": "common",
+    "groups": []
+  },
+  "happy_hour": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "holy_water": {
+    "values": [
+      1
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "horseshoe": {
+    "values": [
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "item_missing": {
+    "values": [],
+    "rarity": null,
+    "groups": []
+  },
+  "jackolantern": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "kyle_the_kernite": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "lefty_the_rabbit": {
+    "values": [
+      10,
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "lemon": {
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "lime_pepper": {
+    "values": [
+      6
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "lint_roller": {
+    "values": [
+      12
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "lockpick": {
+    "values": [
+      35
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "looting_glove": {
+    "values": [
+      1.5
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "lucky_carrot": {
+    "values": [
+      3,
+      3
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "lucky_cat": {
+    "values": [
+      1.3
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "lucky_dice": {
+    "values": [],
+    "rarity": "rare",
+    "groups": []
+  },
+  "lucky_seven": {
+    "values": [
+      3,
+      77
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "lunchbox": {
+    "values": [
+      3
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "maxwell_the_bear": {
+    "values": [
+      1.5
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "mining_pick": {
+    "values": [
+      10
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "mobius_strip": {
+    "values": [
+      50,
+      7
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "ninja_and_mouse": {
+    "values": [
+      6
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "nori_the_rabbit": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "oil_can": {
+    "values": [
+      5,
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "oswald_the_monkey": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "piggy_bank": {
+    "values": [
+      2,
+      2.5
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "pink_pepper": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "pizza_the_cat": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "pool_ball": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "popsicle": {
+    "values": [
+      2
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "protractor": {
+    "values": [
+      3
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "purple_pepper": {
+    "values": [
+      5,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "quigley_the_wolf": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "quiver": {
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "rain_cloud": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "recycling": {
+    "values": [
+      1
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "red_pepper": {
+    "values": [
+      5
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "red_suits": {
+    "values": [
+      7
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "reroll": {
+    "values": [
+      2,
+      3
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "ricky_the_banana": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "ritual_candle": {
+    "values": [
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "rusty_gear": {
+    "values": [
+      3,
+      2
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "shattered_mirror": {
+    "values": [
+      24,
+      7,
+      1
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "shedding_season": {
+    "values": [
+      15
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "shrine": {
+    "values": [],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "sunglasses": {
+    "values": [
+      1,
+      3
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "swapping_device": {
+    "values": [
+      2
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "swear_jar": {
+    "values": [
+      1,
+      3,
+      36
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "symbol_bomb_big": {
+    "values": [
+      4
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "symbol_bomb_quantum": {
+    "values": [
+      9
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "symbol_bomb_small": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "symbol_bomb_very_big": {
+    "values": [
+      8
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "tax_evasion": {
+    "values": [
+      1
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "telescope": {
+    "values": [
+      3
+    ],
+    "rarity": "very_rare",
+    "groups": []
+  },
+  "time_machine": {
+    "values": [
+      5,
+      2,
+      5
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "treasure_map": {
+    "values": [
+      20
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "triple_coins": {
+    "values": [
+      3
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "turtle_and_rabbit": {
+    "values": [
+      77
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "undertaker": {
+    "values": [],
+    "rarity": "rare",
+    "groups": []
+  },
+  "void_party": {
+    "values": [
+      50,
+      7
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "void_portal": {
+    "values": [
+      1,
+      8
+    ],
+    "rarity": "rare",
+    "groups": []
+  },
+  "wanted_poster": {
+    "values": [
+      3.5
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "watering_can": {
+    "values": [
+      100,
+      12
+    ],
+    "rarity": "common",
+    "groups": []
+  },
+  "white_pepper": {
+    "values": [
+      3,
+      3
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "x_ray_machine": {
+    "values": [],
+    "rarity": "uncommon",
+    "groups": []
+  },
+  "yellow_pepper": {
+    "values": [
+      2
+    ],
+    "rarity": "common",
+    "groups": [
+      "pepper"
+    ]
+  },
+  "zaroffs_contract": {
+    "values": [
+      25
+    ],
+    "rarity": "uncommon",
+    "groups": []
+  }
+}

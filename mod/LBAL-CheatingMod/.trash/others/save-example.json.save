@@ -1,0 +1,747 @@
+{
+    "adding": false,
+    "delay": 25,
+    "path": "/root/Main/Sums/Coin Sum",
+    "pos_x": 12,
+    "pos_y": 1102,
+    "value": 0
+}
+{
+    "adding": false,
+    "delay": 25,
+    "essence_value": 0,
+    "path": "/root/Main/Sums/Extra Sum",
+    "pos_x": 12,
+    "pos_y": 1134,
+    "removal_value": 0,
+    "reroll_value": 0
+}
+{
+    "adding": false,
+    "delay": 25,
+    "hp_value": 0,
+    "path": "/root/Main/Sums/HP Sum",
+    "pos_x": 12,
+    "pos_y": 0
+}
+{
+    "coins": 19,
+    "path": "/root/Main/Coins",
+    "queued_increase": 0
+}
+{
+    "icon_types": [
+        "ore",
+        "flower",
+        "empty",
+        "empty",
+        "empty"
+    ],
+    "icon_types_tba_bonus_texts": [],
+    "icon_types_to_be_added": [],
+    "max_icons": 5,
+    "path": "/root/Main/Reels/Reel",
+    "saved_icon_data": [
+        {
+            "coins_earned": 3,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 3,
+            "times_displayed": 3
+        },
+        {
+            "coins_earned": 4,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 4,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 3
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        }
+    ],
+    "spinning": false
+}
+{
+    "icon_types": [
+        "empty",
+        "empty",
+        "empty",
+        "dud",
+        "empty"
+    ],
+    "icon_types_tba_bonus_texts": [],
+    "icon_types_to_be_added": [],
+    "max_icons": 5,
+    "path": "/root/Main/Reels/Reel2",
+    "saved_icon_data": [
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        }
+    ],
+    "spinning": false
+}
+{
+    "icon_types": [
+        "empty",
+        "coin",
+        "empty",
+        "empty",
+        "empty"
+    ],
+    "icon_types_tba_bonus_texts": [],
+    "icon_types_to_be_added": [],
+    "max_icons": 5,
+    "path": "/root/Main/Reels/Reel3",
+    "saved_icon_data": [
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 3
+        },
+        {
+            "coins_earned": 4,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 4,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 2
+        }
+    ],
+    "spinning": false
+}
+{
+    "icon_types": [
+        "pearl",
+        "dud",
+        "cat",
+        "empty",
+        "empty"
+    ],
+    "icon_types_tba_bonus_texts": [],
+    "icon_types_to_be_added": [],
+    "max_icons": 5,
+    "path": "/root/Main/Reels/Reel4",
+    "saved_icon_data": [
+        {
+            "coins_earned": 4,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 4,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 4,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 4,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 1
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 3
+        }
+    ],
+    "spinning": false
+}
+{
+    "icon_types": [
+        "empty",
+        "dud",
+        "cherry",
+        "empty",
+        "empty"
+    ],
+    "icon_types_tba_bonus_texts": [],
+    "icon_types_to_be_added": [],
+    "max_icons": 5,
+    "path": "/root/Main/Reels/Reel5",
+    "saved_icon_data": [
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 3
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 4,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 4,
+            "times_displayed": 4
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 0
+        },
+        {
+            "coins_earned": 0,
+            "essence_token_permanent_bonus": 0,
+            "essence_token_permanent_multiplier": 1,
+            "permanent_bonus": 0,
+            "permanent_multiplier": 1,
+            "removal_token_permanent_bonus": 0,
+            "removal_token_permanent_multiplier": 1,
+            "reroll_token_permanent_bonus": 0,
+            "reroll_token_permanent_multiplier": 1,
+            "saved_value": 0,
+            "saved_values": {},
+            "times_coins_given": 0,
+            "times_displayed": 0
+        }
+    ],
+    "spinning": false
+}
+{
+    "destroyed_item_types": [],
+    "item_count_data": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "item_types": [
+        "symbol_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "reroll_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "removal_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "item_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "coin_box_STEAM_ID_76561199138219743_PACK_CheatingMod"
+    ],
+    "item_types_at_end_of_spin": [
+        "symbol_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "reroll_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "removal_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "item_box_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "coin_box_STEAM_ID_76561199138219743_PACK_CheatingMod"
+    ],
+    "items_destroyed_this_spin": [],
+    "just_added_items": [],
+    "path": "/root/Main/Items",
+    "recently_destroyed_items": [],
+    "saved_destroy_counters": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "saved_item_data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}
+{
+    "anim_time": -1,
+    "doing_entrance_anim": false,
+    "fine_print": [],
+    "fine_print_counter": 0,
+    "fine_print_threshhold": 100,
+    "hp": 1500,
+    "max_hp": 1500,
+    "path": "/root/Main/Landlord",
+    "queued_damage": 0,
+    "queued_fine_print": [],
+    "stolen_items": [],
+    "stolen_symbols": []
+}
+{
+    "comfy_pillow_essence_triggers": 0,
+    "comfy_pillow_triggers": 0,
+    "compost_heap_symbols_destroyed": 0,
+    "current_floor": 13,
+    "current_tip_num": 24,
+    "destroyed_symbol_types": [
+        "cheat_capsule_8_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "cheat_capsule_3_STEAM_ID_76561199138219743_PACK_CheatingMod"
+    ],
+    "destroyed_symbol_types_size": 2,
+    "doing_boss_fight": false,
+    "emails": [
+        {
+            "extra_values": {
+                "forced_rarity": [],
+                "loaded_data": true,
+                "push_front": true
+            },
+            "prompt": true,
+            "replies": [],
+            "text": "添加符号！\n<icon_snail><icon_cheat_capsule_3_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_toddler><icon_cheat_capsule_8_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_d3><icon_magpie><icon_light_bulb><icon_flower><icon_pearl><icon_crow><icon_goose><icon_cheat_capsule_9_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_cheat_capsule_4_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_monkey><icon_oyster><icon_seed><icon_cheat_capsule_1_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_crab><icon_anchor><icon_lockbox><icon_shiny_pebble><icon_mouse><icon_cheat_capsule_0_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_key><icon_bounty_hunter><icon_cat><icon_dwarf><icon_goldfish><icon_bee><icon_hover_coin><icon_cheat_capsule_2_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_banana><icon_cheat_capsule_6_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_coal><icon_cherry><icon_miner><icon_gambler><icon_ore><icon_owl><icon_milk><icon_egg><icon_banana_peel><icon_cheat_capsule_5_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_cultist><icon_present><icon_urn><icon_dog><icon_candy><icon_cheat_capsule_7_STEAM_ID_76561199138219743_PACK_CheatingMod><icon_turtle><icon_bubble><icon_cheese><icon_beer><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin><icon_hover_coin>",
+            "type": "add_tile_prompt"
+        },
+        {
+            "extra_values": {
+                "after_spin": true,
+                "all_symbols_same": true,
+                "forced_rarity": [
+                    "very_rare"
+                ]
+            },
+            "prompt": true,
+            "replies": [],
+            "text": "添加符号！\n",
+            "type": "add_tile_prompt"
+        },
+        {
+            "extra_values": {
+                "after_spin": true,
+                "forced_rarity": [
+                    "very_rare"
+                ]
+            },
+            "prompt": true,
+            "replies": [],
+            "text": "添加物品！\n",
+            "type": "add_item_prompt"
+        }
+    ],
+    "endless_mode": false,
+    "essence_tokens": 0,
+    "extra_item_choices": 0,
+    "extra_symbol_choices": 0,
+    "forced_item_rarities": [],
+    "forced_rarities": [],
+    "fossil_diff": 0,
+    "hex_of_emptiness_trigger": false,
+    "hex_of_hoarding_trigger": false,
+    "items_destroyed_this_spin": 0,
+    "items_to_choose_from": 3,
+    "modded_floor_string": null,
+    "modded_run": true,
+    "passed": [
+        "coin",
+        "egg",
+        "oyster",
+        "cherry",
+        "goose",
+        "cheat_capsule_4_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "snail",
+        "toddler",
+        "d3",
+        "magpie",
+        "light_bulb",
+        "flower",
+        "pearl",
+        "crow",
+        "cheat_capsule_9_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "monkey",
+        "seed",
+        "cheat_capsule_1_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "crab",
+        "anchor",
+        "lockbox",
+        "shiny_pebble",
+        "mouse",
+        "cheat_capsule_0_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "key",
+        "bounty_hunter",
+        "cat",
+        "dwarf",
+        "goldfish",
+        "bee",
+        "cheat_capsule_2_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "banana",
+        "cheat_capsule_6_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "coal",
+        "miner",
+        "gambler",
+        "owl",
+        "milk",
+        "banana_peel",
+        "cheat_capsule_5_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "cultist",
+        "present",
+        "urn",
+        "dog",
+        "candy",
+        "cheat_capsule_7_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "turtle",
+        "bubble",
+        "cheese",
+        "beer"
+    ],
+    "path": "/root/Main/Pop-up Sprite/Pop-up",
+    "permanent_bonuses": [],
+    "prompts_passed": [],
+    "queued_essence_emails": 0,
+    "queued_items": [],
+    "queued_symbols": [],
+    "rarity_bonuses": {
+        "items": {
+            "rare": 1,
+            "uncommon": 1,
+            "very_rare": 1
+        },
+        "symbols": {
+            "rare": 1,
+            "uncommon": 1,
+            "very_rare": 1
+        }
+    },
+    "reels_to_select": 0,
+    "removal_cost": 1,
+    "removal_tokens": 0,
+    "removed_symbol_types": [],
+    "rent_values": [
+        25,
+        1
+    ],
+    "reroll_cost": 1,
+    "reroll_tokens": 0,
+    "respun_essence_reel": -1,
+    "respun_reel": -1,
+    "run_timestamp": 1728807808,
+    "saved_card_types": [],
+    "saved_mod_ids": {
+        "emails": {
+            "add_any_item": "76561199138219743",
+            "add_any_tile": "76561199138219743"
+        },
+        "item_groups": {},
+        "items": {
+            "coin_box": "76561199138219743",
+            "item_box": "76561199138219743",
+            "removal_box": "76561199138219743",
+            "reroll_box": "76561199138219743",
+            "symbol_box": "76561199138219743"
+        },
+        "symbol_groups": {},
+        "symbols": {
+            "cheat_capsule_0": "76561199138219743",
+            "cheat_capsule_1": "76561199138219743",
+            "cheat_capsule_2": "76561199138219743",
+            "cheat_capsule_3": "76561199138219743",
+            "cheat_capsule_4": "76561199138219743",
+            "cheat_capsule_5": "76561199138219743",
+            "cheat_capsule_6": "76561199138219743",
+            "cheat_capsule_7": "76561199138219743",
+            "cheat_capsule_8": "76561199138219743",
+            "cheat_capsule_9": "76561199138219743"
+        }
+    },
+    "sme_this_spin": [],
+    "spins": 4,
+    "symbols_added_this_spin": 0,
+    "symbols_destroyed_this_spin": 0,
+    "symbols_to_choose_from": 145,
+    "symbols_to_select": 0,
+    "taken": [
+        "ore",
+        "cheat_capsule_8_STEAM_ID_76561199138219743_PACK_CheatingMod",
+        "cheat_capsule_3_STEAM_ID_76561199138219743_PACK_CheatingMod"
+    ],
+    "times_rent_paid": 0,
+    "times_to_pay_rent": 12,
+    "total_runs": 105,
+    "transformed_coals": 0
+}
