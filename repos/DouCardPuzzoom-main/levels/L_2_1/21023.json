@@ -1,0 +1,46 @@
+{
+    "name": "L_2_1",
+    "id": "21023",
+    "rule": "RuleSuit",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Housekeeper"
+    ],
+    "cards": [
+        [
+            "diamond-2",
+            "diamond-3",
+            "spade-4",
+            "spade-4",
+            "heart-4",
+            "heart-4",
+            "club-6",
+            "club-7",
+            "diamond-7",
+            "diamond-7",
+            "spade-8",
+            "diamond-9",
+            "heart-10",
+            "heart-10",
+            "diamond-Q"
+        ],
+        [
+            "spade-2",
+            "club-2",
+            "diamond-7",
+            "club-9",
+            "spade-J",
+            "club-K",
+            "diamond-A",
+            "joker-CJ",
+            "joker-BJ"
+        ]
+    ]
+}

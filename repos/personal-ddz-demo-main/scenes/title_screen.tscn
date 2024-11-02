@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://8ne8j46w5ipa"]
+
+[ext_resource type="Texture2D" uid="uid://d0v0x4e6lhwqo" path="res://assets/bg_tilte.png" id="1_lotx0"]
+[ext_resource type="Script" path="res://scenes/title_screen.gd" id="2_g16aj"]
+[ext_resource type="Texture2D" uid="uid://bf6ugdi7c3e2q" path="res://assets/button/quick.png" id="3_n732s"]
+[ext_resource type="Texture2D" uid="uid://gldscgj7wilb" path="res://assets/button/start.png" id="4_0j13b"]
+[ext_resource type="Texture2D" uid="uid://djro18sm0yv7" path="res://assets/button/exit.png" id="5_i14yp"]
+
+[node name="TitleScreen" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_lotx0")
+script = ExtResource("2_g16aj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -70.0
+offset_right = 84.0
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+
+[node name="AIMode" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_n732s")
+
+[node name="PlayerMode" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_0j13b")
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("5_i14yp")
+
+[connection signal="pressed" from="VBoxContainer/AIMode" to="." method="_on_ai_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer/PlayerMode" to="." method="_on_player_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

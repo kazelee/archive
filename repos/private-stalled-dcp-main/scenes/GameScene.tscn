@@ -1,0 +1,70 @@
+[gd_scene load_steps=13 format=3 uid="uid://c5qsg1x5o4anc"]
+
+[ext_resource type="Texture2D" uid="uid://b5wnmgeyyp3ud" path="res://assets/bg/bg-frog-blue.png" id="1_4tf8o"]
+[ext_resource type="PackedScene" uid="uid://doeuuuilcc68l" path="res://scenes/place/MyCardPlace.tscn" id="2_coprb"]
+[ext_resource type="Script" path="res://scripts/GameScene.cs" id="2_twyr2"]
+[ext_resource type="PackedScene" uid="uid://ctaqdjbf5wsew" path="res://scenes/ui/ButtonLabel.tscn" id="3_xi36u"]
+[ext_resource type="Texture2D" uid="uid://qn8hp5fy2ekp" path="res://assets/buttons/Levels/Default.png" id="4_n4thg"]
+[ext_resource type="PackedScene" uid="uid://r4rlmh7l5jxa" path="res://scenes/ui/LeadCardBar.tscn" id="4_umatg"]
+[ext_resource type="Texture2D" uid="uid://cf0w4igol0eed" path="res://assets/buttons/Levels/Hover.png" id="5_iya17"]
+[ext_resource type="Script" path="res://scripts/units/PlayerLeadUnit.cs" id="6_tfk7c"]
+[ext_resource type="Texture2D" uid="uid://b212xlic3qhe0" path="res://assets/buttons/Home/Default.png" id="7_al7rv"]
+[ext_resource type="Texture2D" uid="uid://ikmbj0p3qml2" path="res://assets/buttons/Home/Hover.png" id="8_udqnf"]
+[ext_resource type="Script" path="res://scripts/units/places/MyCardPlace.cs" id="10_m8677"]
+[ext_resource type="PackedScene" uid="uid://16qvd7fi7yh0" path="res://scenes/place/LeadPlace.tscn" id="12_ixghk"]
+
+[node name="GameScene" type="Sprite2D"]
+position = Vector2(960, 540)
+texture = ExtResource("1_4tf8o")
+script = ExtResource("2_twyr2")
+
+[node name="ModeLabel" parent="." instance=ExtResource("3_xi36u")]
+text = "模式：[u]教程（双人/明牌）[/u]"
+
+[node name="LevelButton" type="TextureButton" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1150.0
+offset_top = -530.0
+offset_right = -1070.0
+offset_bottom = -447.0
+grow_horizontal = 0
+texture_normal = ExtResource("4_n4thg")
+texture_pressed = ExtResource("4_n4thg")
+texture_hover = ExtResource("5_iya17")
+
+[node name="HomeButton" type="TextureButton" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1050.0
+offset_top = -530.0
+offset_right = -970.0
+offset_bottom = -447.0
+grow_horizontal = 0
+texture_normal = ExtResource("7_al7rv")
+texture_pressed = ExtResource("7_al7rv")
+texture_hover = ExtResource("8_udqnf")
+
+[node name="PlayerLeadUnit" type="Node2D" parent="."]
+script = ExtResource("6_tfk7c")
+
+[node name="MyCardPlace" parent="PlayerLeadUnit" instance=ExtResource("2_coprb")]
+position = Vector2(0, 400)
+script = ExtResource("10_m8677")
+
+[node name="LeadCardBar" parent="PlayerLeadUnit" instance=ExtResource("4_umatg")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = 100.0
+offset_right = 296.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeadPlace" parent="PlayerLeadUnit" instance=ExtResource("12_ixghk")]

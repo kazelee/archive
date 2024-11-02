@@ -1,0 +1,385 @@
+[gd_scene load_steps=18 format=3 uid="uid://btliniugt657o"]
+
+[ext_resource type="Texture2D" uid="uid://d4gbml1pyu0ib" path="res://assets/bg/title-bg.png" id="1_k7lgu"]
+[ext_resource type="Script" path="res://scripts/scenes/TitleScreen.cs" id="2_tdxfi"]
+[ext_resource type="Texture2D" uid="uid://dhrg55acdj1uw" path="res://assets/ui/outline-texture.png" id="3_atra4"]
+[ext_resource type="FontFile" uid="uid://bw6gprnurbt52" path="res://assets/LanaPixel.ttf" id="3_ft3jj"]
+[ext_resource type="PackedScene" uid="uid://brtw2qmobmfhx" path="res://scenes/ui/DoorArea.tscn" id="5_wah3f"]
+[ext_resource type="PackedScene" uid="uid://e7s8q2br3mvh" path="res://scenes/ui/HangTagArea.tscn" id="6_t2xmm"]
+[ext_resource type="Texture2D" uid="uid://dsriume0tufxs" path="res://assets/ui/btn-setting.png" id="7_te3so"]
+[ext_resource type="Texture2D" uid="uid://5wsgvv0hqka8" path="res://assets/ui/hvr-setting.png" id="8_n6hx5"]
+[ext_resource type="Texture2D" uid="uid://2c8mslfbmf65" path="res://assets/ui/btn-info.png" id="9_a4pi2"]
+[ext_resource type="Texture2D" uid="uid://85twmvu0hyds" path="res://assets/ui/hvr-info.png" id="10_xo0x4"]
+[ext_resource type="Texture2D" uid="uid://dwipkqsvjulrf" path="res://assets/ui/btn-locate.png" id="11_bbld0"]
+[ext_resource type="Texture2D" uid="uid://njxtfv2xaurn" path="res://assets/ui/hvr-locate.png" id="12_5whhp"]
+[ext_resource type="Shader" path="res://scenes/TitleScreen.gdshader" id="13_b2ick"]
+[ext_resource type="PackedScene" uid="uid://bvd4i6w4y0kpb" path="res://scenes/objects/WallLight.tscn" id="13_dxfr7"]
+[ext_resource type="PackedScene" uid="uid://ctq33urw2j5ro" path="res://scenes/ui/SavePanel.tscn" id="15_m3elk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8cybt"]
+texture = ExtResource("3_atra4")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gpt77"]
+shader = ExtResource("13_b2ick")
+shader_parameter/vignette_intensity = 0.2
+shader_parameter/vignette_opacity = 0.1
+shader_parameter/vignette_rgb = Color(0, 0, 0, 1)
+
+[node name="TitleScreen" type="Sprite2D"]
+position = Vector2(192, 108)
+texture = ExtResource("1_k7lgu")
+script = ExtResource("2_tdxfi")
+
+[node name="TitlePanel" type="Panel" parent="."]
+offset_left = -170.0
+offset_top = -85.0
+offset_right = -20.0
+offset_bottom = -10.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8cybt")
+
+[node name="Title_en" type="Control" parent="TitlePanel"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 167.0
+offset_top = 98.0
+offset_right = 167.0
+offset_bottom = 98.0
+
+[node name="Dou" type="Label" parent="TitlePanel/Title_en"]
+layout_mode = 0
+offset_left = -152.0
+offset_top = -90.0
+offset_right = -105.0
+offset_bottom = -57.0
+theme_override_colors/font_color = Color(0.843137, 0.466667, 0.380392, 1)
+theme_override_colors/font_shadow_color = Color(0.627451, 0.301961, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "Dou"
+
+[node name="Card" type="Label" parent="TitlePanel/Title_en"]
+layout_mode = 0
+offset_left = -95.0
+offset_top = -90.0
+offset_right = -31.0
+offset_bottom = -57.0
+theme_override_colors/font_color = Color(0.843137, 0.8, 0.239216, 1)
+theme_override_colors/font_shadow_color = Color(0.517647, 0.490196, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "Card"
+
+[node name="Puzzle" type="Label" parent="TitlePanel/Title_en"]
+layout_mode = 0
+offset_left = -148.0
+offset_top = -61.0
+offset_right = -103.0
+offset_bottom = -28.0
+theme_override_colors/font_color = Color(0.568627, 0.498039, 0.741176, 1)
+theme_override_colors/font_shadow_color = Color(0.360784, 0.298039, 0.509804, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "Puz"
+
+[node name="Room" type="Label" parent="TitlePanel/Title_en"]
+layout_mode = 0
+offset_left = -103.0
+offset_top = -61.0
+offset_right = -35.0
+offset_bottom = -28.0
+theme_override_colors/font_color = Color(0.686275, 0.768627, 0.443137, 1)
+theme_override_colors/font_shadow_color = Color(0.419608, 0.478431, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "zoom
+"
+
+[node name="Title_zh_CN" type="Control" parent="TitlePanel"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 167.0
+offset_top = 98.0
+offset_right = 167.0
+offset_bottom = 98.0
+
+[node name="Dou" type="Label" parent="TitlePanel/Title_zh_CN"]
+layout_mode = 0
+offset_left = -159.0
+offset_top = -90.0
+offset_right = -118.0
+offset_bottom = -44.0
+theme_override_colors/font_color = Color(0.843137, 0.466667, 0.380392, 1)
+theme_override_colors/font_shadow_color = Color(0.627451, 0.301961, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 45
+text = "斗"
+
+[node name="Card" type="Label" parent="TitlePanel/Title_zh_CN"]
+layout_mode = 0
+offset_left = -125.0
+offset_top = -62.0
+offset_right = -96.0
+offset_bottom = -29.0
+theme_override_colors/font_color = Color(0.843137, 0.8, 0.239216, 1)
+theme_override_colors/font_shadow_color = Color(0.517647, 0.490196, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "牌"
+
+[node name="Puzzle" type="Label" parent="TitlePanel/Title_zh_CN"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = -89.0
+offset_right = -55.0
+offset_bottom = -43.0
+theme_override_colors/font_color = Color(0.568627, 0.498039, 0.741176, 1)
+theme_override_colors/font_shadow_color = Color(0.360784, 0.298039, 0.509804, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 45
+text = "谜"
+
+[node name="Room" type="Label" parent="TitlePanel/Title_zh_CN"]
+layout_mode = 0
+offset_left = -53.0
+offset_top = -62.0
+offset_right = -24.0
+offset_bottom = -29.0
+theme_override_colors/font_color = Color(0.686275, 0.768627, 0.443137, 1)
+theme_override_colors/font_shadow_color = Color(0.419608, 0.478431, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "室"
+
+[node name="Title_zh_TW" type="Control" parent="TitlePanel"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 167.0
+offset_top = 98.0
+offset_right = 167.0
+offset_bottom = 98.0
+
+[node name="Dou" type="Label" parent="TitlePanel/Title_zh_TW"]
+layout_mode = 0
+offset_left = -159.0
+offset_top = -90.0
+offset_right = -118.0
+offset_bottom = -44.0
+theme_override_colors/font_color = Color(0.843137, 0.466667, 0.380392, 1)
+theme_override_colors/font_shadow_color = Color(0.627451, 0.301961, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 45
+text = "鬥"
+
+[node name="Card" type="Label" parent="TitlePanel/Title_zh_TW"]
+layout_mode = 0
+offset_left = -122.0
+offset_top = -59.0
+offset_right = -93.0
+offset_bottom = -26.0
+theme_override_colors/font_color = Color(0.843137, 0.8, 0.239216, 1)
+theme_override_colors/font_shadow_color = Color(0.517647, 0.490196, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "牌"
+
+[node name="Puzzle" type="Label" parent="TitlePanel/Title_zh_TW"]
+layout_mode = 0
+offset_left = -92.0
+offset_top = -91.0
+offset_right = -51.0
+offset_bottom = -45.0
+theme_override_colors/font_color = Color(0.568627, 0.498039, 0.741176, 1)
+theme_override_colors/font_shadow_color = Color(0.360784, 0.298039, 0.509804, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 45
+text = "謎"
+
+[node name="Room" type="Label" parent="TitlePanel/Title_zh_TW"]
+layout_mode = 0
+offset_left = -51.0
+offset_top = -59.0
+offset_right = -22.0
+offset_bottom = -26.0
+theme_override_colors/font_color = Color(0.686275, 0.768627, 0.443137, 1)
+theme_override_colors/font_shadow_color = Color(0.419608, 0.478431, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 32
+text = "室"
+
+[node name="Title_ja" type="Control" parent="TitlePanel"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 167.0
+offset_top = 98.0
+offset_right = 167.0
+offset_bottom = 98.0
+
+[node name="Dou" type="Label" parent="TitlePanel/Title_ja"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -89.0
+offset_right = -104.0
+offset_bottom = -56.0
+theme_override_colors/font_color = Color(0.843137, 0.466667, 0.380392, 1)
+theme_override_colors/font_shadow_color = Color(0.627451, 0.301961, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 30
+text = "ドー"
+
+[node name="Card" type="Label" parent="TitlePanel/Title_ja"]
+layout_mode = 0
+offset_left = -103.0
+offset_top = -89.0
+offset_right = -25.0
+offset_bottom = -56.0
+theme_override_colors/font_color = Color(0.843137, 0.8, 0.239216, 1)
+theme_override_colors/font_shadow_color = Color(0.517647, 0.490196, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 30
+text = "カード"
+
+[node name="Puzzle" type="Label" parent="TitlePanel/Title_ja"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -58.0
+offset_right = -104.0
+offset_bottom = -25.0
+theme_override_colors/font_color = Color(0.568627, 0.498039, 0.741176, 1)
+theme_override_colors/font_shadow_color = Color(0.360784, 0.298039, 0.509804, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 30
+text = "パズ"
+
+[node name="Room" type="Label" parent="TitlePanel/Title_ja"]
+layout_mode = 0
+offset_left = -104.0
+offset_top = -58.0
+offset_right = -26.0
+offset_bottom = -25.0
+theme_override_colors/font_color = Color(0.686275, 0.768627, 0.443137, 1)
+theme_override_colors/font_shadow_color = Color(0.419608, 0.478431, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_ft3jj")
+theme_override_font_sizes/font_size = 30
+text = "ルーム"
+
+[node name="DoorArea" parent="." instance=ExtResource("5_wah3f")]
+
+[node name="HangTagArea" parent="." instance=ExtResource("6_t2xmm")]
+
+[node name="GainObjects" type="Node2D" parent="."]
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -128.0
+offset_right = -232.0
+offset_bottom = -128.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="SettingButton" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -40.0
+offset_right = 25.0
+offset_bottom = -20.0
+texture_normal = ExtResource("7_te3so")
+texture_pressed = ExtResource("7_te3so")
+texture_hover = ExtResource("8_n6hx5")
+
+[node name="InfoButton" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -10.0
+offset_right = 25.0
+offset_bottom = 10.0
+texture_normal = ExtResource("9_a4pi2")
+texture_pressed = ExtResource("9_a4pi2")
+texture_hover = ExtResource("10_xo0x4")
+
+[node name="LocateButton" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 20.0
+offset_right = 25.0
+offset_bottom = 40.0
+texture_normal = ExtResource("11_bbld0")
+texture_pressed = ExtResource("11_bbld0")
+texture_hover = ExtResource("12_5whhp")
+
+[node name="LevelTest" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextEdit" type="TextEdit" parent="LevelTest"]
+visible = false
+layout_mode = 0
+offset_left = -170.0
+offset_top = 20.0
+offset_right = -50.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "11001"
+
+[node name="Button" type="Button" parent="LevelTest"]
+visible = false
+layout_mode = 0
+offset_left = -40.0
+offset_top = 20.0
+offset_right = -15.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 8
+text = "Test"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.788235, 0.788235, 0.784314, 1)
+
+[node name="WallLight" parent="." instance=ExtResource("13_dxfr7")]
+position = Vector2(-7, -90)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="ColorRectBG" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -108.0
+offset_right = -192.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.12549)
+
+[node name="SavePanel" parent="." instance=ExtResource("15_m3elk")]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_gpt77")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -108.0
+offset_right = -192.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true

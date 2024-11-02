@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccg353756bws8"]
+
+[ext_resource type="Texture2D" uid="uid://cfb6bi3iqn4y8" path="res://assets/bg_game.png" id="1_2bamo"]
+[ext_resource type="Script" path="res://scenes/game_scene.gd" id="2_10pp1"]
+[ext_resource type="PackedScene" uid="uid://oo1xdx0tkm37" path="res://objects/top_card_bar.tscn" id="3_iin2h"]
+[ext_resource type="PackedScene" uid="uid://cgtlxeysjwpbw" path="res://objects/player.tscn" id="3_ur1yr"]
+[ext_resource type="PackedScene" uid="uid://d20ks70y6bfd8" path="res://scenes/final_screen.tscn" id="5_2r83c"]
+
+[node name="GameScene" type="Sprite2D"]
+texture = ExtResource("1_2bamo")
+centered = false
+script = ExtResource("2_10pp1")
+
+[node name="TopCardBar" parent="." instance=ExtResource("3_iin2h")]
+position = Vector2(480, 40)
+
+[node name="PlayerLeft" parent="." instance=ExtResource("3_ur1yr")]
+player_position = 2
+
+[node name="PlayerRight" parent="." instance=ExtResource("3_ur1yr")]
+position = Vector2(960, 0)
+player_position = 1
+
+[node name="Face" parent="PlayerRight" index="0"]
+position = Vector2(-50, 50)
+flip_h = true
+
+[node name="ID" parent="PlayerRight" index="1"]
+offset_left = -220.0
+offset_right = -100.0
+horizontal_alignment = 2
+
+[node name="Score" parent="PlayerRight" index="2"]
+offset_left = -220.0
+offset_right = -100.0
+horizontal_alignment = 2
+
+[node name="CardPlace" parent="PlayerRight" index="3"]
+position = Vector2(-50, 170)
+
+[node name="LeadPlace" parent="PlayerRight" index="4"]
+position = Vector2(-200, 150)
+
+[node name="PlayerDown" parent="." instance=ExtResource("3_ur1yr")]
+position = Vector2(0, 350)
+
+[node name="CardPlace" parent="PlayerDown" index="3"]
+position = Vector2(480, 230)
+
+[node name="LeadPlace" parent="PlayerDown" index="4"]
+position = Vector2(480, -50)
+
+[node name="CallLandlordBar" parent="PlayerDown" index="5"]
+offset_left = 178.0
+offset_top = 50.0
+offset_right = 782.0
+offset_bottom = 106.0
+
+[node name="LeadCardBar" parent="PlayerDown" index="6"]
+offset_left = 256.0
+offset_top = 50.0
+offset_right = 704.0
+offset_bottom = 106.0
+
+[node name="FinalScreen" parent="." instance=ExtResource("5_2r83c")]
+visible = false
+
+[editable path="PlayerRight"]
+[editable path="PlayerDown"]

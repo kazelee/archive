@@ -1,0 +1,35 @@
+{
+    "name": "L_1_2",
+    "id": "12014",
+    "rule": "RuleOri",
+    "mode": "Rest",
+    "pass_limit": 999,
+    "lead_limit": 4,
+    "pass_request": 0,
+    "lead_request": 4,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Landlord"
+    ],
+    "cards": [
+        [
+            "diamond-Q",
+            "heart-7",
+            "heart-2",
+            "club-K",
+            "club-6",
+            "heart-2",
+            "spade-2",
+            "spade-2"
+        ],
+        [
+            "heart-9",
+            "heart-10",
+            "club-7",
+            "heart-8",
+            "diamond-6"
+        ]
+    ]
+}

@@ -1,0 +1,297 @@
+[gd_scene load_steps=22 format=3 uid="uid://ctq33urw2j5ro"]
+
+[ext_resource type="Texture2D" uid="uid://dtlnompft5fc7" path="res://assets/ui/outline-dialogue.png" id="1_lh477"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="2_8ixq3"]
+[ext_resource type="Script" path="res://scripts/objects/ui/SavePanel.cs" id="2_jyh8n"]
+[ext_resource type="Theme" uid="uid://ceiltvt2dct1m" path="res://scenes/ui/ScrollPurple.tres" id="3_2cqxb"]
+[ext_resource type="Theme" uid="uid://clleaso6ygqiv" path="res://scenes/ui/ButtonSmall.tres" id="4_a6nf1"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="5_uvelk"]
+[ext_resource type="Theme" uid="uid://b0rfyktknixop" path="res://scenes/objects/ButtonBlue.tres" id="6_1ipsu"]
+[ext_resource type="FontFile" uid="uid://cm6ldt7pvwror" path="res://assets/Uranus_Pixel_11Px.ttf" id="6_uc6kc"]
+[ext_resource type="Theme" uid="uid://c8ep5h0rxn28f" path="res://scenes/objects/ButtonGreen.tres" id="7_3hp7g"]
+[ext_resource type="Theme" uid="uid://bhydun4egniij" path="res://assets/PurpleButton.tres" id="8_qt1tg"]
+[ext_resource type="Texture2D" uid="uid://cy8wnd7cbyqod" path="res://assets/ui/outline-light.png" id="10_8bq8l"]
+[ext_resource type="PackedScene" uid="uid://016au5n0455b" path="res://scenes/ui/SaveCreator.tscn" id="11_0njs7"]
+[ext_resource type="Texture2D" uid="uid://bmyai7e5eb1lb" path="res://assets/ui/outline-dark.png" id="13_8fjg1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lg5p7"]
+texture = ExtResource("1_lh477")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vlt6e"]
+texture = ExtResource("10_8bq8l")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_ewoqn"]
+Label/colors/font_color = Color(0.560784, 0.337255, 0.231373, 1)
+Label/font_sizes/font_size = 7
+Label/fonts/font = ExtResource("2_8ixq3")
+Label/styles/normal = SubResource("StyleBoxTexture_vlt6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wujhk"]
+texture = ExtResource("1_lh477")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="Theme" id="Theme_eeol3"]
+Label/colors/font_color = Color(0.282353, 0.431373, 0.533333, 1)
+Label/font_sizes/font_size = 12
+Label/fonts/font = ExtResource("2_8ixq3")
+
+[sub_resource type="Theme" id="Theme_irtw1"]
+Button/font_sizes/font_size = 10
+Button/fonts/font = ExtResource("2_8ixq3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wugq2"]
+texture = ExtResource("13_8fjg1")
+texture_margin_left = 4.0
+texture_margin_top = 2.0
+texture_margin_right = 4.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_nyepb"]
+Label/colors/font_color = Color(0.870588, 0.94902, 0.941176, 1)
+Label/font_sizes/font_size = 10
+Label/fonts/font = ExtResource("2_8ixq3")
+Label/styles/normal = SubResource("StyleBoxTexture_wugq2")
+
+[node name="SavePanel" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = -162.0
+offset_right = -96.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lg5p7")
+script = ExtResource("2_jyh8n")
+
+[node name="LevelName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.0
+offset_top = 8.0
+offset_right = 30.0
+offset_bottom = 21.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.290196, 0.435294, 0.505882, 1)
+theme_override_fonts/font = ExtResource("2_8ixq3")
+theme_override_font_sizes/font_size = 12
+text = "UI_CHOOSESAVE"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -24.0
+offset_right = 70.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_2cqxb")
+horizontal_scroll_mode = 0
+
+[node name="ButtonContainer" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("4_a6nf1")
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="Button" type="Button" parent="ScrollContainer/ButtonContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_uc6kc")
+text = "No. 001"
+
+[node name="Escape" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("5_uvelk")
+texture_pressed = ExtResource("5_uvelk")
+texture_hover = ExtResource("5_uvelk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = 26.0
+offset_right = 70.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="SelectNow" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("6_1ipsu")
+text = "BTN_SELECT"
+
+[node name="CreateNew" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("7_3hp7g")
+text = "BTN_CREATE"
+
+[node name="DeleteNow" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("8_qt1tg")
+text = "BTN_DELETE"
+
+[node name="HintText" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.5
+offset_top = 11.0
+offset_right = 27.5
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ewoqn")
+text = "请至少保留一个存档！"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SaveCreator" parent="." instance=ExtResource("11_0njs7")]
+visible = false
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 192.0
+offset_bottom = 108.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="DeleteScreen" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -54.0
+offset_right = 96.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wujhk")
+
+[node name="Question" type="Label" parent="DeleteScreen"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -70.0
+offset_top = 8.0
+offset_right = 70.0
+offset_bottom = 34.0
+grow_horizontal = 2
+theme = SubResource("Theme_eeol3")
+text = "UI_QUSDEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Decisions" type="HBoxContainer" parent="DeleteScreen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.0
+offset_top = -27.0
+offset_right = 54.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_irtw1")
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="LeftButton" type="Button" parent="DeleteScreen/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("6_1ipsu")
+text = "BTN_YES"
+
+[node name="RightButton" type="Button" parent="DeleteScreen/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("7_3hp7g")
+text = "BTN_NO"
+
+[node name="DelEscape" type="TextureButton" parent="DeleteScreen"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("5_uvelk")
+texture_pressed = ExtResource("5_uvelk")
+texture_hover = ExtResource("5_uvelk")
+
+[node name="CurrentId" type="Label" parent="DeleteScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -7.0
+offset_right = 18.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_nyepb")
+text = "No. 001"

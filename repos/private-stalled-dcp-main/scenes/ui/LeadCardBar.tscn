@@ -1,0 +1,109 @@
+[gd_scene load_steps=20 format=3 uid="uid://r4rlmh7l5jxa"]
+
+[ext_resource type="FontFile" uid="uid://dtmv57ia3rbpa" path="res://assets/CangErXiaoWanZi-2.ttf" id="1_m6b4y"]
+[ext_resource type="Texture2D" uid="uid://hv1ce2oyeu5a" path="res://assets/buttons/button-purple.png" id="2_4syul"]
+[ext_resource type="Texture2D" uid="uid://bliwguv5l28ja" path="res://assets/buttons/hover-orange.png" id="2_ayq6g"]
+[ext_resource type="Script" path="res://scripts/units/places/LeadCardBar.cs" id="2_b0m61"]
+[ext_resource type="Texture2D" uid="uid://c1o3v0c16aa61" path="res://assets/buttons/hover-purple.png" id="2_n6h5o"]
+[ext_resource type="Texture2D" uid="uid://dw106us2kjrdv" path="res://assets/buttons/button-green.png" id="3_ddd8v"]
+[ext_resource type="Texture2D" uid="uid://b0khlt7a5k6if" path="res://assets/buttons/hover-green.png" id="4_ljt5j"]
+[ext_resource type="Texture2D" uid="uid://c7j7lyly7w53t" path="res://assets/buttons/button-orange.png" id="4_x7ims"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2sneo"]
+
+[sub_resource type="Theme" id="Theme_ipoiw"]
+Button/font_sizes/font_size = 50
+Button/fonts/font = ExtResource("1_m6b4y")
+Button/styles/focus = SubResource("StyleBoxEmpty_2sneo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vibgf"]
+texture = ExtResource("2_n6h5o")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_467pw"]
+texture = ExtResource("2_4syul")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="Theme" id="Theme_yiuht"]
+Button/colors/font_color = Color(0.384314, 0.392157, 0.501961, 1)
+Button/colors/font_focus_color = Color(0.384314, 0.392157, 0.501961, 1)
+Button/styles/hover = SubResource("StyleBoxTexture_vibgf")
+Button/styles/normal = SubResource("StyleBoxTexture_467pw")
+Button/styles/pressed = SubResource("StyleBoxTexture_467pw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1l351"]
+texture = ExtResource("4_ljt5j")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hksn3"]
+texture = ExtResource("3_ddd8v")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="Theme" id="Theme_4flvc"]
+Button/colors/font_color = Color(0.341176, 0.34902, 0.2, 1)
+Button/colors/font_focus_color = Color(0.341176, 0.34902, 0.2, 1)
+Button/styles/hover = SubResource("StyleBoxTexture_1l351")
+Button/styles/normal = SubResource("StyleBoxTexture_hksn3")
+Button/styles/pressed = SubResource("StyleBoxTexture_hksn3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4vdc6"]
+texture = ExtResource("2_ayq6g")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u657c"]
+texture = ExtResource("4_x7ims")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="Theme" id="Theme_y81q1"]
+Button/colors/font_color = Color(0.501961, 0.372549, 0.231373, 1)
+Button/colors/font_focus_color = Color(0.501961, 0.372549, 0.231373, 1)
+Button/styles/hover = SubResource("StyleBoxTexture_4vdc6")
+Button/styles/normal = SubResource("StyleBoxTexture_u657c")
+Button/styles/pressed = SubResource("StyleBoxTexture_u657c")
+
+[node name="LeadCardBar" type="HBoxContainer"]
+offset_right = 112.0
+offset_bottom = 70.0
+theme = SubResource("Theme_ipoiw")
+theme_override_constants/separation = 50
+alignment = 1
+script = ExtResource("2_b0m61")
+
+[node name="PassButton" type="Button" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_yiuht")
+text = "不出"
+
+[node name="HintButton" type="Button" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_4flvc")
+text = "提示"
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_y81q1")
+text = "出牌"

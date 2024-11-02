@@ -1,0 +1,228 @@
+{
+    "D_HK_HI": [
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_1"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_HK_HI_2"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_3"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_HI_4"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_5"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_6"
+        },
+        {
+            "icon": "I_HK_5.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_7"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_HK_HI_8"
+        },
+        {
+            "icon": "I_HK_3.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_9"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_HI_10"
+        },
+        {
+            "icon": "I_HK_4.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_11"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_12"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_HK_HI_13"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HI_14"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_HI_15"
+        }
+    ],
+    "D_HK_HOTEL": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_HK_HOTEL_1"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_2"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_HK_HOTEL_3"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_4"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_HOTEL_5"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_6"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_7"
+        },
+        {
+            "icon": "I_HK_5.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_8"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_HK_HOTEL_9"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_10"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_HK_HOTEL_11"
+        },
+        {
+            "icon": "I_HK_4.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_12"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_13"
+        },
+        {
+            "icon": "I_HK_5.png",
+            "name": "C_HK",
+            "content": "D_HK_HOTEL_14"
+        }
+    ],
+    "D_HK_LL0": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_1"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_2"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_3"
+        },
+        {
+            "icon": "I_HK_4.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_4"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_5"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_6"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_7"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_8"
+        },
+        {
+            "icon": "I_HK_1.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_9"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_10"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_11"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_12"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_13"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_HK_LL0_14"
+        },
+        {
+            "icon": "I_HK_2.png",
+            "name": "C_HK",
+            "content": "D_HK_LL0_15"
+        }
+    ]
+}

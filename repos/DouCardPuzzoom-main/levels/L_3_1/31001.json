@@ -1,0 +1,27 @@
+{
+    "name": "L_3_1",
+    "id": "31001",
+    "rule": "RuleMahjong",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "heart-A",
+            "heart-2",
+            "heart-3"
+        ],
+        [
+            "spade-3",
+            "spade-3"
+        ]
+    ]
+}

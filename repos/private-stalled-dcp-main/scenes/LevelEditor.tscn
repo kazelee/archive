@@ -1,0 +1,191 @@
+[gd_scene load_steps=16 format=3 uid="uid://bssbjhq0id4lw"]
+
+[ext_resource type="FontFile" uid="uid://bljwhxgvlq67e" path="res://assets/CangErYuYangTiW03-2.ttf" id="1_5ywv3"]
+[ext_resource type="Texture2D" uid="uid://b5wnmgeyyp3ud" path="res://assets/bg/bg-frog-blue.png" id="1_etw3q"]
+[ext_resource type="Texture2D" uid="uid://dw106us2kjrdv" path="res://assets/buttons/button-green.png" id="2_1cal7"]
+[ext_resource type="Texture2D" uid="uid://b0khlt7a5k6if" path="res://assets/buttons/hover-green.png" id="2_8itj6"]
+[ext_resource type="Texture2D" uid="uid://6xwovq3cogfl" path="res://assets/ui/Dummy.png" id="2_tqcdo"]
+[ext_resource type="Texture2D" uid="uid://b212xlic3qhe0" path="res://assets/buttons/Home/Default.png" id="4_gf8iu"]
+[ext_resource type="Texture2D" uid="uid://ikmbj0p3qml2" path="res://assets/buttons/Home/Hover.png" id="5_gcj7f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vsmj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mk6yo"]
+texture = ExtResource("2_8itj6")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w08e4"]
+texture = ExtResource("2_1cal7")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6j7hm"]
+texture = ExtResource("2_1cal7")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 19.0
+region_rect = Rect2(0, 0, 160, 83)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_38lfm"]
+texture = ExtResource("2_tqcdo")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1ab0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v777e"]
+texture = ExtResource("2_tqcdo")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+region_rect = Rect2(0, 0, 40, 40)
+
+[sub_resource type="Theme" id="Theme_tp5ap"]
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("1_5ywv3")
+Button/styles/focus = SubResource("StyleBoxEmpty_7vsmj")
+Button/styles/hover = SubResource("StyleBoxTexture_mk6yo")
+Button/styles/normal = SubResource("StyleBoxTexture_w08e4")
+Button/styles/pressed = SubResource("StyleBoxTexture_w08e4")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxTexture_6j7hm")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 40
+Label/fonts/font = ExtResource("1_5ywv3")
+LineEdit/font_sizes/font_size = 30
+LineEdit/fonts/font = ExtResource("1_5ywv3")
+LineEdit/styles/normal = SubResource("StyleBoxTexture_38lfm")
+OptionButton/font_sizes/font_size = 40
+OptionButton/styles/focus = SubResource("StyleBoxEmpty_w1ab0")
+OptionButton/styles/hover = SubResource("StyleBoxTexture_v777e")
+OptionButton/styles/normal = SubResource("StyleBoxTexture_v777e")
+OptionButton/styles/pressed = SubResource("StyleBoxTexture_v777e")
+
+[node name="LevelEditor" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_tp5ap")
+texture = ExtResource("1_etw3q")
+
+[node name="EditorLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 71.0
+text = "界面：关卡编辑器（开发者版本）"
+
+[node name="HomeButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -90.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 93.0
+grow_horizontal = 0
+texture_normal = ExtResource("4_gf8iu")
+texture_pressed = ExtResource("4_gf8iu")
+texture_hover = ExtResource("5_gcj7f")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 1461.0
+offset_top = 288.0
+offset_right = 1741.0
+offset_bottom = 356.0
+text = "花色严格模式"
+
+[node name="ModeSetting" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 150.0
+offset_right = 639.0
+offset_bottom = 217.0
+theme_override_constants/separation = 50
+
+[node name="ModeLabel" type="Label" parent="ModeSetting"]
+layout_mode = 2
+text = "模式："
+
+[node name="ModeChooseButton" type="OptionButton" parent="ModeSetting"]
+layout_mode = 2
+item_count = 1
+popup/item_0/text = "教程（双人/明牌）"
+popup/item_0/id = 0
+
+[node name="AIPlayerSetting" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 250.0
+offset_right = 376.0
+offset_bottom = 317.0
+theme_override_constants/separation = 50
+
+[node name="AIPlayerLabel" type="Label" parent="AIPlayerSetting"]
+layout_mode = 2
+text = "对手："
+
+[node name="AIPlayer1" type="OptionButton" parent="AIPlayerSetting"]
+layout_mode = 2
+item_count = 1
+popup/item_0/text = "机器人"
+popup/item_0/id = 0
+
+[node name="CardSetting" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 400.0
+offset_right = 300.0
+offset_bottom = 451.0
+theme_override_constants/separation = 20
+
+[node name="YourCards" type="HBoxContainer" parent="CardSetting"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Your" type="Label" parent="CardSetting/YourCards"]
+layout_mode = 2
+text = "玩家卡牌："
+
+[node name="CardPointEdit" type="LineEdit" parent="CardSetting/YourCards"]
+layout_mode = 2
+placeholder_text = "输入点数字符串（0表示10，B表示小王，C表示大王）"
+expand_to_text_length = true
+
+[node name="AI1Cards" type="HBoxContainer" parent="CardSetting"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="AI1" type="Label" parent="CardSetting/AI1Cards"]
+layout_mode = 2
+text = "对手（左）卡牌："
+
+[node name="CardPointEdit" type="LineEdit" parent="CardSetting/AI1Cards"]
+layout_mode = 2
+placeholder_text = "输入点数字符串（0表示10，B表示小王，C表示大王）"
+expand_to_text_length = true
+
+[node name="AI2Cards" type="HBoxContainer" parent="CardSetting"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="AI2" type="Label" parent="CardSetting/AI2Cards"]
+layout_mode = 2
+text = "对手（右）卡牌："
+
+[node name="CardPointEdit" type="LineEdit" parent="CardSetting/AI2Cards"]
+layout_mode = 2
+placeholder_text = "输入点数字符串（0表示10，B表示小王，C表示大王）"
+expand_to_text_length = true

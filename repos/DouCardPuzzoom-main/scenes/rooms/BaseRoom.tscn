@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr0u4ggo1oa60"]
+
+[ext_resource type="Texture2D" uid="uid://im5q3i60xobm" path="res://assets/bg/room-housekeeper.png" id="1_txvfy"]
+[ext_resource type="PackedScene" uid="uid://c6byn1jum5rns" path="res://scenes/objects/Player.tscn" id="2_kysft"]
+[ext_resource type="PackedScene" uid="uid://bvd4i6w4y0kpb" path="res://scenes/objects/WallLight.tscn" id="3_6aft7"]
+[ext_resource type="PackedScene" uid="uid://ii87xc1k7rhs" path="res://scenes/objects/InterArea.tscn" id="4_rbvo8"]
+[ext_resource type="Texture2D" uid="uid://dpk3ajavv74i" path="res://assets/objects/door_final.png" id="5_nx48q"]
+[ext_resource type="PackedScene" uid="uid://bn8g4fbf8faqu" path="res://scenes/objects/NPC.tscn" id="6_n6hgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1lh4"]
+size = Vector2(42, 188)
+
+[node name="BaseRoom" type="Sprite2D"]
+position = Vector2(192, 108)
+texture = ExtResource("1_txvfy")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+scale = Vector2(0.661224, 1)
+polygon = PackedVector2Array(-583.766, 114, -391.698, 13, 388.673, 11, 583.766, 114, 583.766, -112, -583.766, -110)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-393, 106, 401, 105, 401, 111, -393, 111)
+
+[node name="OutDoor" parent="." instance=ExtResource("4_rbvo8")]
+position = Vector2(-345, -1)
+
+[node name="Sprite2D" parent="OutDoor" index="0"]
+position = Vector2(-4, 3)
+scale = Vector2(2, 2)
+texture = ExtResource("5_nx48q")
+
+[node name="CollisionShape2D" parent="OutDoor" index="1"]
+position = Vector2(-4, 3)
+shape = SubResource("RectangleShape2D_n1lh4")
+
+[node name="NPC" parent="." instance=ExtResource("6_n6hgb")]
+NPCName = ""
+
+[node name="AiImage" parent="NPC" index="0"]
+animation = &"Housekeeper"
+
+[node name="CollisionShape2D" parent="NPC/AiImage/InteractArea" index="0"]
+position = Vector2(0.25, 0.140625)
+
+[node name="InteractScreen" parent="NPC" index="3"]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("2_kysft")]
+position = Vector2(-240, 50)
+
+[node name="AnimatedSprite2D" parent="Player" index="1"]
+flip_h = false
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = -192
+limit_top = 0
+limit_right = 576
+limit_bottom = 216
+drag_horizontal_enabled = true
+editor_draw_drag_margin = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.584314, 0.643137, 0.639216, 1)
+
+[node name="WallLights" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="WallLight" parent="WallLights" instance=ExtResource("3_6aft7")]
+position = Vector2(-350, -110)
+
+[node name="WallLight2" parent="WallLights" instance=ExtResource("3_6aft7")]
+position = Vector2(-175, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight3" parent="WallLights" instance=ExtResource("3_6aft7")]
+position = Vector2(0, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight4" parent="WallLights" instance=ExtResource("3_6aft7")]
+position = Vector2(175, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight5" parent="WallLights" instance=ExtResource("3_6aft7")]
+position = Vector2(350, -110)
+scale = Vector2(1.04545, 1.02)
+
+[editable path="OutDoor"]
+[editable path="NPC"]
+[editable path="Player"]

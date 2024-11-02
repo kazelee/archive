@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://oo1xdx0tkm37"]
+
+[ext_resource type="Script" path="res://objects/top_card_bar.gd" id="1_2woyr"]
+[ext_resource type="Texture2D" uid="uid://bdh8uudcn4ly4" path="res://assets/cards/card54.png" id="1_b6sle"]
+
+[node name="TopCardBar" type="Node2D"]
+script = ExtResource("1_2woyr")
+
+[node name="Card1" type="Sprite2D" parent="."]
+position = Vector2(-75, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_b6sle")
+
+[node name="Card2" type="Sprite2D" parent="."]
+position = Vector2(-25, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_b6sle")
+
+[node name="Card3" type="Sprite2D" parent="."]
+position = Vector2(25, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_b6sle")
+
+[node name="Base" type="Label" parent="."]
+offset_left = 55.0
+offset_top = -26.0
+offset_right = 128.0
+text = "底分: 50"
+vertical_alignment = 1
+
+[node name="Times" type="Label" parent="."]
+offset_left = 55.0
+offset_right = 128.0
+offset_bottom = 26.0
+text = "倍数: 1"
+vertical_alignment = 1

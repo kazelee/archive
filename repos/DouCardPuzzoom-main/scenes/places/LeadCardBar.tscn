@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4doa5mfv1gr"]
+
+[ext_resource type="Script" path="res://scripts/objects/places/LeadCardBar.cs" id="1_0lsgs"]
+[ext_resource type="Texture2D" uid="uid://cskdvor4yk3xr" path="res://assets/buttons/button-pass-cn.png" id="1_df1hr"]
+[ext_resource type="Texture2D" uid="uid://blxpt62gksr5i" path="res://assets/buttons/hover-pass-cn.png" id="2_qw8tl"]
+[ext_resource type="Texture2D" uid="uid://bljrtmh4sjnyt" path="res://assets/buttons/button-hint-cn.png" id="2_y0x8w"]
+[ext_resource type="Texture2D" uid="uid://bgoh7eswwd5aj" path="res://assets/buttons/button-play-cn.png" id="3_1s8if"]
+[ext_resource type="Texture2D" uid="uid://ciy0agr353632" path="res://assets/buttons/hover-hint-cn.png" id="4_t4fcj"]
+[ext_resource type="Texture2D" uid="uid://cp238m5f4k6xp" path="res://assets/buttons/hover-play-cn.png" id="6_j62op"]
+
+[node name="LeadCardBar" type="HBoxContainer"]
+offset_right = 98.0
+offset_bottom = 16.0
+alignment = 1
+script = ExtResource("1_0lsgs")
+
+[node name="PassButton" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("1_df1hr")
+texture_pressed = ExtResource("1_df1hr")
+texture_hover = ExtResource("2_qw8tl")
+
+[node name="HintButton" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("2_y0x8w")
+texture_pressed = ExtResource("2_y0x8w")
+texture_hover = ExtResource("4_t4fcj")
+
+[node name="PlayButton" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("3_1s8if")
+texture_pressed = ExtResource("3_1s8if")
+texture_hover = ExtResource("6_j62op")

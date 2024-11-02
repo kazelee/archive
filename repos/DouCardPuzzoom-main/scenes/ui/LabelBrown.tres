@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bmbfnm0daan2n"]
+
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="1_skyey"]
+
+[resource]
+Label/colors/font_color = Color(0.698039, 0.435294, 0.313726, 1)
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_skyey")

@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://vm6hjcu5vxvc"]
+
+[ext_resource type="Texture2D" uid="uid://b27y32b5nx4ss" path="res://assets/button/pass.png" id="2_buenp"]
+[ext_resource type="Texture2D" uid="uid://butokq6ee0lye" path="res://assets/button/hint.png" id="3_cosh6"]
+[ext_resource type="Texture2D" uid="uid://bk4x01q5qqgud" path="res://assets/button/shot.png" id="4_1oi7s"]
+
+[sub_resource type="GDScript" id="GDScript_fci8g"]
+script/source = "extends HBoxContainer
+
+signal has_led
+
+enum Lead {
+	PASS, HINT, SHOT
+}
+
+enum State {
+	FIRST, NONE, FOLLOW
+}
+
+@onready var pass_button: Button = $Pass
+@onready var hint: Button = $Hint
+@onready var shot: Button = $Shot
+
+var lead_state := State.FIRST
+
+
+func init_buttons(state: State) -> void:
+	lead_state = state
+	match state:
+		State.FIRST:
+			pass_button.hide()
+			hint.hide()
+			shot.show()
+
+		State.NONE:
+			pass_button.show()
+			hint.hide()
+			shot.hide()
+
+		State.FOLLOW:
+			pass_button.show()
+			hint.show()
+			shot.show()
+
+
+func _on_pass_pressed() -> void:
+	has_led.emit(Lead.PASS)
+
+
+func _on_hint_pressed() -> void:
+	has_led.emit(Lead.HINT)
+
+
+func _on_shot_pressed() -> void:
+	has_led.emit(Lead.SHOT)
+"
+
+[node name="LeadCardBar" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 20
+alignment = 1
+script = SubResource("GDScript_fci8g")
+
+[node name="Pass" type="Button" parent="."]
+layout_mode = 2
+icon = ExtResource("2_buenp")
+
+[node name="Hint" type="Button" parent="."]
+layout_mode = 2
+icon = ExtResource("3_cosh6")
+
+[node name="Shot" type="Button" parent="."]
+layout_mode = 2
+icon = ExtResource("4_1oi7s")
+
+[connection signal="pressed" from="Pass" to="." method="_on_pass_pressed"]
+[connection signal="pressed" from="Hint" to="." method="_on_hint_pressed"]
+[connection signal="pressed" from="Shot" to="." method="_on_shot_pressed"]

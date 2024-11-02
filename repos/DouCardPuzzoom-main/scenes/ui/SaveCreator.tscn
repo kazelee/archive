@@ -1,0 +1,151 @@
+[gd_scene load_steps=11 format=3 uid="uid://016au5n0455b"]
+
+[ext_resource type="Texture2D" uid="uid://dtlnompft5fc7" path="res://assets/ui/outline-dialogue.png" id="1_1y87w"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="2_6l748"]
+[ext_resource type="Script" path="res://scripts/objects/ui/SaveCreator.cs" id="2_ir1xg"]
+[ext_resource type="PackedScene" uid="uid://cj7fl0yformc8" path="res://scenes/ui/NumberSetter.tscn" id="3_0v0ul"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="6_6me5q"]
+[ext_resource type="Texture2D" uid="uid://ebnjw4oopmjc" path="res://assets/ui/level-solved.png" id="7_2ypkc"]
+[ext_resource type="Texture2D" uid="uid://cy8wnd7cbyqod" path="res://assets/ui/outline-light.png" id="7_py2xa"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4o8ee"]
+texture = ExtResource("1_1y87w")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w8rcl"]
+texture = ExtResource("7_py2xa")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_baoqw"]
+Label/colors/font_color = Color(0.560784, 0.337255, 0.231373, 1)
+Label/font_sizes/font_size = 7
+Label/fonts/font = ExtResource("2_6l748")
+Label/styles/normal = SubResource("StyleBoxTexture_w8rcl")
+
+[node name="SaveCreator" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -54.0
+offset_right = 96.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_4o8ee")
+script = ExtResource("2_ir1xg")
+
+[node name="LevelName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.0
+offset_top = 8.0
+offset_right = 30.0
+offset_bottom = 21.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.290196, 0.435294, 0.505882, 1)
+theme_override_fonts/font = ExtResource("2_6l748")
+theme_override_font_sizes/font_size = 12
+text = "UI_ADDNEW"
+horizontal_alignment = 1
+
+[node name="LevelName2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_top = 22.0
+offset_right = 35.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.454902, 0.686275, 0.713726, 1)
+theme_override_fonts/font = ExtResource("2_6l748")
+theme_override_font_sizes/font_size = 10
+text = "UI_ADDNEWC"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -14.0
+offset_right = 20.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="NumberSetter" parent="HBoxContainer" instance=ExtResource("3_0v0ul")]
+layout_mode = 2
+
+[node name="NumberSetter2" parent="HBoxContainer" instance=ExtResource("3_0v0ul")]
+layout_mode = 2
+
+[node name="NumberSetter3" parent="HBoxContainer" instance=ExtResource("3_0v0ul")]
+layout_mode = 2
+
+[node name="Escape" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("6_6me5q")
+texture_pressed = ExtResource("6_6me5q")
+texture_hover = ExtResource("6_6me5q")
+
+[node name="Enter" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("7_2ypkc")
+texture_pressed = ExtResource("7_2ypkc")
+texture_hover = ExtResource("7_2ypkc")
+
+[node name="HintText" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = 31.0
+offset_right = 30.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_baoqw")
+text = "请至少保留一个存档！"
+horizontal_alignment = 1
+vertical_alignment = 1

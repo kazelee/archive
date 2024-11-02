@@ -1,0 +1,84 @@
+[gd_scene load_steps=9 format=3 uid="uid://cfx6i1v3e70q2"]
+
+[ext_resource type="Texture2D" uid="uid://bbvnmypqbde3i" path="res://assets/bg/main-floor-2.png" id="1_kl53d"]
+[ext_resource type="PackedScene" uid="uid://ii87xc1k7rhs" path="res://scenes/objects/InterArea.tscn" id="2_jhg5u"]
+[ext_resource type="PackedScene" uid="uid://c6byn1jum5rns" path="res://scenes/objects/Player.tscn" id="2_uuoko"]
+[ext_resource type="Script" path="res://scripts/scenes/MainHouseScene2.cs" id="2_xcivv"]
+[ext_resource type="Texture2D" uid="uid://bjidg70qxfh0y" path="res://assets/objects/stair-2.png" id="3_6v3iq"]
+[ext_resource type="PackedScene" uid="uid://bvd4i6w4y0kpb" path="res://scenes/objects/WallLight.tscn" id="3_d5vr6"]
+[ext_resource type="PackedScene" uid="uid://dnlvkjb467gdw" path="res://scenes/ui/QuestionScreen.tscn" id="7_fmp8p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogt0n"]
+size = Vector2(90, 100)
+
+[node name="MainHouseScene2" type="Sprite2D"]
+position = Vector2(192, 108)
+texture = ExtResource("1_kl53d")
+script = ExtResource("2_xcivv")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-579, 114, -452, 11, 449, 10, 577, 111, 577, -112, -578, -110)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-583, 107, 581, 107, 581, 111, -583, 112)
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="Stairs" parent="Doors" instance=ExtResource("2_jhg5u")]
+position = Vector2(350, -40)
+
+[node name="Sprite2D" parent="Doors/Stairs" index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_6v3iq")
+
+[node name="CollisionShape2D" parent="Doors/Stairs" index="1"]
+shape = SubResource("RectangleShape2D_ogt0n")
+
+[node name="Player" parent="." instance=ExtResource("2_uuoko")]
+position = Vector2(350, 50)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = -384
+limit_top = 0
+limit_right = 768
+limit_bottom = 216
+drag_horizontal_enabled = true
+editor_draw_drag_margin = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.8, 0.654902, 0.686275, 1)
+
+[node name="WallLights" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="WallLight" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(-276, -86)
+
+[node name="WallLight2" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(-539, -110)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight3" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(-96, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight4" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(84, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight5" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(264, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight6" parent="WallLights" instance=ExtResource("3_d5vr6")]
+position = Vector2(539, -110)
+scale = Vector2(1.04545, 1.02)
+
+[node name="QuestionScreen" parent="." instance=ExtResource("7_fmp8p")]
+visible = false
+
+[editable path="Doors/Stairs"]

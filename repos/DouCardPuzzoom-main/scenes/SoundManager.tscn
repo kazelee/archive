@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwbiqnteqpini"]
+
+[ext_resource type="Script" path="res://scripts/SoundManager.cs" id="1_mdtok"]
+[ext_resource type="AudioStream" uid="uid://cj84op7x03mh7" path="res://assets/sound/sfx/click.mp3" id="2_yd4ai"]
+[ext_resource type="AudioStream" uid="uid://bxi0l83usx5bh" path="res://assets/sound/sfx/pick.mp3" id="3_yu23p"]
+
+[node name="SoundManager" type="Node"]
+script = ExtResource("1_mdtok")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="SFX"]
+
+[node name="ResultPlayer" type="AudioStreamPlayer" parent="SFX"]
+
+[node name="ButtonSFXPlayer" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("2_yd4ai")
+
+[node name="AreaSFXPlayer" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("3_yu23p")
+
+[node name="Music" type="Node" parent="."]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="Music"]

@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxmv7ug57wiq3"]
+
+[ext_resource type="Texture2D" uid="uid://ulksb4c1a75q" path="res://assets/ui/outline.png" id="1_maq7c"]
+[ext_resource type="Script" path="res://scripts/objects/ui/InfoScreen.cs" id="2_5xjfc"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="2_u7vmw"]
+[ext_resource type="Theme" uid="uid://dfaxw1buayy4m" path="res://scenes/ui/ScrollOrange.tres" id="4_fwhw3"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="5_74sjf"]
+[ext_resource type="Theme" uid="uid://bmbfnm0daan2n" path="res://scenes/ui/LabelBrown.tres" id="5_a8uhm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j650j"]
+texture = ExtResource("1_maq7c")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[node name="InfoScreen" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -54.0
+offset_right = 96.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_j650j")
+script = ExtResource("2_5xjfc")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -26.5
+offset_top = 10.0
+offset_right = 26.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.560784, 0.0823529, 0.231373, 1)
+theme_override_fonts/font = ExtResource("2_u7vmw")
+theme_override_font_sizes/font_size = 12
+text = "规则 - 原版"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -22.0
+offset_right = 85.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_fwhw3")
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Content" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_a8uhm")
+text = "- 与原版斗地主的规则相同
+- 原版斗地主只看点数，不看花色
+- 可出牌的类型有：
+    - 单牌：大小依次为 3 < 4 < 5 < ... < J < Q < K < A < 2 < 小王 < 大王
+    - 对子：两张一样的牌，大小与单牌一致
+    - 三张：三张一样的牌，大小与单牌一致
+    - 三带一：三张一样的牌加一张额外的牌，大小以三张为准"
+autowrap_mode = 3
+
+[node name="Escape" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("5_74sjf")
+texture_pressed = ExtResource("5_74sjf")
+texture_hover = ExtResource("5_74sjf")

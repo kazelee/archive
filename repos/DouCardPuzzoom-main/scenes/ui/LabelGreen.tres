@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://5gqlupypdr3d"]
+
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="1_et8ps"]
+
+[resource]
+Label/colors/font_color = Color(0.741176, 0.686275, 0.466667, 1)
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_et8ps")

@@ -1,0 +1,146 @@
+[gd_scene load_steps=13 format=3 uid="uid://vjiom3eajb23"]
+
+[ext_resource type="Texture2D" uid="uid://ulksb4c1a75q" path="res://assets/ui/outline.png" id="1_ksdal"]
+[ext_resource type="Texture2D" uid="uid://b68aa2w36b4yu" path="res://assets/ui/outline-small.png" id="2_fhxyn"]
+[ext_resource type="Script" path="res://scripts/objects/ui/AiInfoScreen.cs" id="2_nsvo0"]
+[ext_resource type="Texture2D" uid="uid://bukieg4oryfvn" path="res://assets/icons/icon-Robot.png" id="3_a0el5"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="4_m8q8t"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="5_qijey"]
+[ext_resource type="Theme" uid="uid://dfaxw1buayy4m" path="res://scenes/ui/ScrollOrange.tres" id="6_djr61"]
+[ext_resource type="Theme" uid="uid://bmbfnm0daan2n" path="res://scenes/ui/LabelBrown.tres" id="6_u736r"]
+[ext_resource type="Theme" uid="uid://bd3flcnholpfa" path="res://scenes/ui/LabelRed.tres" id="8_gdplh"]
+[ext_resource type="Theme" uid="uid://5gqlupypdr3d" path="res://scenes/ui/LabelGreen.tres" id="9_5a5ik"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jhf4s"]
+texture = ExtResource("1_ksdal")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ugw0h"]
+texture = ExtResource("2_fhxyn")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[node name="AiInfoScreen" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -54.0
+offset_right = 96.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jhf4s")
+script = ExtResource("2_nsvo0")
+
+[node name="AiPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ugw0h")
+
+[node name="AiIcon" type="TextureRect" parent="AiPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -13.0
+offset_right = 13.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_a0el5")
+
+[node name="AiNameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 74.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(0.713726, 0.447059, 0.321569, 1)
+theme_override_fonts/font = ExtResource("4_m8q8t")
+theme_override_font_sizes/font_size = 12
+text = "Robot"
+vertical_alignment = 1
+
+[node name="AiInfoLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 25.0
+offset_right = 74.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.976471, 0.713726, 0.568627, 1)
+theme_override_fonts/font = ExtResource("4_m8q8t")
+theme_override_font_sizes/font_size = 12
+text = "Robot"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -6.0
+offset_right = 85.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_djr61")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+
+[node name="Addition" type="Label" parent="ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("8_gdplh")
+text = "1. 出牌逻辑
+2. 跟牌逻辑
+3. ???"
+autowrap_mode = 3
+
+[node name="Content" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("6_u736r")
+text = "1. 出牌逻辑出牌逻辑出牌逻辑
+2. 跟牌逻辑
+3. ???"
+autowrap_mode = 3
+
+[node name="ContentThree" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("9_5a5ik")
+text = "1. 出牌逻辑出牌逻辑出牌逻辑出牌逻辑出牌逻辑
+2. 跟牌逻辑
+3. ???"
+autowrap_mode = 3
+
+[node name="Escape" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("5_qijey")
+texture_pressed = ExtResource("5_qijey")
+texture_hover = ExtResource("5_qijey")

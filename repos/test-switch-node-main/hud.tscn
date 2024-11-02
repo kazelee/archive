@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu00pwwxwgeb4"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_xxfjt"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_xxfjt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 148.0
+offset_bottom = 70.0
+theme_override_constants/separation = 20
+
+[node name="EditMode" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "编辑模式"
+
+[node name="AddNode" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "新建节点"
+
+[node name="Drag" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "移动
+"
+
+[node name="Link" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "连接"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+offset_left = 180.0
+offset_top = 95.0
+offset_right = 280.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 20
+placeholder_text = "节点数量"
+
+[connection signal="pressed" from="VBoxContainer/EditMode" to="." method="_on_edit_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer/AddNode" to="." method="_on_add_node_pressed"]
+[connection signal="pressed" from="VBoxContainer/Drag" to="." method="_on_drag_pressed"]
+[connection signal="pressed" from="VBoxContainer/Link" to="." method="_on_link_pressed"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

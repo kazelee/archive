@@ -1,0 +1,35 @@
+{
+    "name": "L_1_1",
+    "id": "11019",
+    "rule": "RuleOri",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Landlord"
+    ],
+    "cards": [
+        [
+            "spade-A",
+            "spade-9",
+            "spade-A",
+            "spade-9",
+            "spade-8",
+            "spade-A",
+            "spade-10"
+        ],
+        [
+            "heart-A",
+            "heart-A",
+            "heart-4",
+            "heart-5",
+            "heart-A",
+            "heart-4"
+        ]
+    ]
+}

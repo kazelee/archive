@@ -1,0 +1,16 @@
+{
+    "T_ITSNOTIME": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "T_ITSNOTIME_1"
+        }
+    ],
+    "T_LL_FIRST": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_T_LL_FIRST_1"
+        }
+    ]
+}

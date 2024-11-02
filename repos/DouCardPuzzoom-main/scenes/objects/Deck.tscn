@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfna8g5mms35v"]
+
+[ext_resource type="Texture2D" uid="uid://hq3wildhs6lw" path="res://assets/pokers/back-orange.png" id="1_0xtqs"]
+[ext_resource type="Script" path="res://scripts/objects/Deck.cs" id="1_yecht"]
+[ext_resource type="Theme" uid="uid://bkp02u61x8qil" path="res://scenes/ui/LevelOld.tres" id="2_j7vn6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q0l1h"]
+size = Vector2(30, 40)
+
+[node name="Deck" type="Area2D"]
+script = ExtResource("1_yecht")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0xtqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_q0l1h")
+
+[node name="LevelName" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = 21.0
+offset_right = 25.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_j7vn6")
+text = "？-？
+尽情期待"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Progress" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = 55.0
+offset_right = 18.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_j7vn6")
+theme_override_colors/font_color = Color(0.705882, 0.423529, 0.188235, 1)
+theme_override_font_sizes/font_size = 8
+text = "Solved 0/??"
+horizontal_alignment = 1
+vertical_alignment = 1

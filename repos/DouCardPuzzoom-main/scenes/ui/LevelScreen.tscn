@@ -1,0 +1,168 @@
+[gd_scene load_steps=9 format=3 uid="uid://btktler3r75g6"]
+
+[ext_resource type="Texture2D" uid="uid://ulksb4c1a75q" path="res://assets/ui/outline.png" id="1_6suea"]
+[ext_resource type="Script" path="res://scripts/objects/ui/LevelScreen.cs" id="1_rhbxe"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="2_fdrpc"]
+[ext_resource type="Theme" uid="uid://bkp02u61x8qil" path="res://scenes/ui/LevelOld.tres" id="3_1si65"]
+[ext_resource type="Texture2D" uid="uid://hq3wildhs6lw" path="res://assets/pokers/back-orange.png" id="4_vbapd"]
+[ext_resource type="PackedScene" uid="uid://bfna8g5mms35v" path="res://scenes/objects/Deck.tscn" id="5_omf1v"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="6_rcfb4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7vfs"]
+texture = ExtResource("1_6suea")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[node name="LevelScreen" type="CanvasLayer"]
+script = ExtResource("1_rhbxe")
+
+[node name="LevelPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -64.0
+offset_right = 144.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_r7vfs")
+
+[node name="Label" type="Label" parent="LevelPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.0
+offset_top = 10.0
+offset_right = 22.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.698039, 0.435294, 0.313726, 1)
+theme_override_fonts/font = ExtResource("2_fdrpc")
+theme_override_font_sizes/font_size = 12
+text = "UI_CHOOSEDECK"
+
+[node name="Levels" type="HBoxContainer" parent="LevelPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_1si65")
+theme_override_constants/separation = 20
+
+[node name="OneLevelInfo" type="VBoxContainer" parent="LevelPanel/Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="LevelPanel/Levels/OneLevelInfo"]
+layout_mode = 2
+texture = ExtResource("4_vbapd")
+stretch_mode = 3
+
+[node name="Button" type="Button" parent="LevelPanel/Levels/OneLevelInfo"]
+layout_mode = 2
+text = "1-1 新人"
+
+[node name="Progress" type="Label" parent="LevelPanel/Levels/OneLevelInfo"]
+layout_mode = 2
+text = "3/60"
+horizontal_alignment = 1
+
+[node name="OneLevelInfo2" type="VBoxContainer" parent="LevelPanel/Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="LevelPanel/Levels/OneLevelInfo2"]
+layout_mode = 2
+texture = ExtResource("4_vbapd")
+stretch_mode = 3
+
+[node name="Button" type="Button" parent="LevelPanel/Levels/OneLevelInfo2"]
+layout_mode = 2
+text = "1-1 新人"
+
+[node name="Progress" type="Label" parent="LevelPanel/Levels/OneLevelInfo2"]
+layout_mode = 2
+text = "3/60"
+horizontal_alignment = 1
+
+[node name="OneLevelInfo3" type="VBoxContainer" parent="LevelPanel/Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="LevelPanel/Levels/OneLevelInfo3"]
+layout_mode = 2
+texture = ExtResource("4_vbapd")
+stretch_mode = 3
+
+[node name="Button" type="Button" parent="LevelPanel/Levels/OneLevelInfo3"]
+layout_mode = 2
+text = "1-1 新人"
+
+[node name="Progress" type="Label" parent="LevelPanel/Levels/OneLevelInfo3"]
+layout_mode = 2
+text = "3/60"
+horizontal_alignment = 1
+
+[node name="OneLevelInfo4" type="VBoxContainer" parent="LevelPanel/Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="LevelPanel/Levels/OneLevelInfo4"]
+layout_mode = 2
+texture = ExtResource("4_vbapd")
+stretch_mode = 3
+
+[node name="Button" type="Button" parent="LevelPanel/Levels/OneLevelInfo4"]
+layout_mode = 2
+text = "1-1 新人"
+
+[node name="Progress" type="Label" parent="LevelPanel/Levels/OneLevelInfo4"]
+layout_mode = 2
+text = "3/60"
+horizontal_alignment = 1
+
+[node name="Escape" type="TextureButton" parent="LevelPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -21.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = 21.0
+grow_horizontal = 0
+texture_normal = ExtResource("6_rcfb4")
+texture_pressed = ExtResource("6_rcfb4")
+texture_hover = ExtResource("6_rcfb4")
+
+[node name="Decks" type="Node2D" parent="LevelPanel"]
+z_index = 1
+position = Vector2(144, 52)
+
+[node name="Deck1" parent="LevelPanel/Decks" instance=ExtResource("5_omf1v")]
+position = Vector2(-90, 0)
+
+[node name="Deck2" parent="LevelPanel/Decks" instance=ExtResource("5_omf1v")]
+position = Vector2(-30, 0)
+
+[node name="Deck3" parent="LevelPanel/Decks" instance=ExtResource("5_omf1v")]
+position = Vector2(30, 0)
+
+[node name="Deck4" parent="LevelPanel/Decks" instance=ExtResource("5_omf1v")]
+position = Vector2(90, 0)

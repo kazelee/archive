@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8d1idorvhlc8"]
+
+[ext_resource type="Texture2D" uid="uid://6xwovq3cogfl" path="res://assets/ui/Dummy.png" id="1_je7ur"]
+[ext_resource type="Texture2D" uid="uid://c25rb7xs58nns" path="res://assets/characters/robot.png" id="2_rr7ta"]
+[ext_resource type="PackedScene" uid="uid://ctaqdjbf5wsew" path="res://scenes/ui/ButtonLabel.tscn" id="3_4e3ds"]
+[ext_resource type="FontFile" uid="uid://bljwhxgvlq67e" path="res://assets/CangErYuYangTiW03-2.ttf" id="4_fe8my"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eei7k"]
+texture = ExtResource("1_je7ur")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[node name="PlayerLeft" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/panel = SubResource("StyleBoxTexture_eei7k")
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+texture = ExtResource("2_rr7ta")
+
+[node name="CharacterName" parent="." instance=ExtResource("3_4e3ds")]
+layout_mode = 2
+offset_left = 0.0
+offset_top = 200.0
+offset_right = 180.0
+offset_bottom = 251.0
+theme_override_font_sizes/normal_font_size = 30
+text = "人物：[u]机器人[/u]"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 250.0
+offset_right = 40.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_fonts/font = ExtResource("4_fe8my")
+theme_override_font_sizes/font_size = 30
+text = "剩余牌数：20"

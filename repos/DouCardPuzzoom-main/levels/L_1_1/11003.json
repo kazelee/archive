@@ -1,0 +1,36 @@
+{
+    "name": "L_1_1",
+    "id": "11003",
+    "rule": "RuleOri",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "spade-3",
+            "spade-3",
+            "club-5",
+            "club-5",
+            "diamond-7",
+            "diamond-7",
+            "heart-9",
+            "heart-9"
+        ],
+        [
+            "spade-4",
+            "club-6",
+            "club-6",
+            "diamond-J",
+            "diamond-J",
+            "heart-K"
+        ]
+    ]
+}

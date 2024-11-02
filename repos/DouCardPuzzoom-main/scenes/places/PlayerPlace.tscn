@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://bwxwbumug2mrp"]
+
+[ext_resource type="Script" path="res://scripts/objects/places/PlayerPlace.cs" id="1_7ufph"]
+[ext_resource type="PackedScene" uid="uid://fcp58a2unaky" path="res://scenes/places/PlayerCardPlace.tscn" id="2_xy26i"]
+[ext_resource type="PackedScene" uid="uid://bdxsrsy34goal" path="res://scenes/places/LeadPlace.tscn" id="3_4cwdg"]
+[ext_resource type="PackedScene" uid="uid://b4doa5mfv1gr" path="res://scenes/places/LeadCardBar.tscn" id="4_ijnsu"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="5_3kwkt"]
+[ext_resource type="Texture2D" uid="uid://cy8wnd7cbyqod" path="res://assets/ui/outline-light.png" id="6_k3377"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qaseg"]
+texture = ExtResource("6_k3377")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_a0pg7"]
+Label/colors/font_color = Color(0.560784, 0.337255, 0.231373, 1)
+Label/font_sizes/font_size = 7
+Label/fonts/font = ExtResource("5_3kwkt")
+Label/styles/normal = SubResource("StyleBoxTexture_qaseg")
+
+[node name="PlayerPlace" type="Node2D"]
+script = ExtResource("1_7ufph")
+
+[node name="PlayerLeadPlace" parent="." instance=ExtResource("3_4cwdg")]
+position = Vector2(0, 35)
+
+[node name="PlayerCardPlace" parent="." instance=ExtResource("2_xy26i")]
+position = Vector2(0, 80)
+
+[node name="LeadCardBar" parent="." instance=ExtResource("4_ijnsu")]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = 27.0
+offset_right = 49.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HintText" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.5
+offset_top = 45.0
+offset_right = 27.5
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_a0pg7")
+text = "您出的牌不符合规则"
+horizontal_alignment = 1
+vertical_alignment = 1

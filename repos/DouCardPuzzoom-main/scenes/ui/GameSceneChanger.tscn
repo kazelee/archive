@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://5x2js220w7fd"]
+
+[node name="GameSceneChanger" type="CanvasLayer"]
+
+[node name="DoorLeft" type="Sprite2D" parent="."]
+position = Vector2(-96, 108)

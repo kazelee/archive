@@ -1,0 +1,26 @@
+{
+    "name": "L_2_1",
+    "id": "21001",
+    "rule": "RuleSuit",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "spade-Q",
+            "spade-K"
+        ],
+        [
+            "heart-2",
+            "heart-A"
+        ]
+    ]
+}

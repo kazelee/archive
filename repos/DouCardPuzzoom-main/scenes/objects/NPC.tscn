@@ -1,0 +1,213 @@
+[gd_scene load_steps=26 format=3 uid="uid://bn8g4fbf8faqu"]
+
+[ext_resource type="Script" path="res://scripts/objects/NPC.cs" id="1_mij3s"]
+[ext_resource type="Texture2D" uid="uid://dl2aun4nayy60" path="res://assets/people/landlord1.png" id="2_nvdfl"]
+[ext_resource type="Texture2D" uid="uid://b1g1rxrna2im4" path="res://assets/people/housekeeper1.png" id="2_t7hsf"]
+[ext_resource type="Texture2D" uid="uid://bljm20ep13j4t" path="res://assets/people/landlord2.png" id="3_ih0l0"]
+[ext_resource type="Texture2D" uid="uid://jn7xevo2stg5" path="res://assets/people/housekeeper2.png" id="3_ijcd7"]
+[ext_resource type="Texture2D" uid="uid://bqp1j4br710q" path="res://assets/people/housekeeper3.png" id="4_v62it"]
+[ext_resource type="Texture2D" uid="uid://cbu7sotd7t1j5" path="res://assets/people/landlord3.png" id="4_y3my1"]
+[ext_resource type="Texture2D" uid="uid://ca0mc6wgefu2" path="res://assets/people/robot1.png" id="5_4bn5a"]
+[ext_resource type="Texture2D" uid="uid://3g11b08ibhli" path="res://assets/people/robot2.png" id="6_tetk0"]
+[ext_resource type="Texture2D" uid="uid://dey5xg2uhpwlc" path="res://assets/people/robot3.png" id="7_noo0p"]
+[ext_resource type="Script" path="res://scripts/objects/ui/AiImage.cs" id="8_8k4rg"]
+[ext_resource type="Script" path="res://scripts/objects/ui/Interactable.cs" id="9_b08su"]
+[ext_resource type="PackedScene" uid="uid://btktler3r75g6" path="res://scenes/ui/LevelScreen.tscn" id="11_g1yg3"]
+[ext_resource type="Texture2D" uid="uid://ulksb4c1a75q" path="res://assets/ui/outline.png" id="11_vfnkw"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="12_ttsty"]
+[ext_resource type="Theme" uid="uid://b0rfyktknixop" path="res://scenes/objects/ButtonBlue.tres" id="14_2m6k6"]
+[ext_resource type="Theme" uid="uid://c8ep5h0rxn28f" path="res://scenes/objects/ButtonGreen.tres" id="15_1g127"]
+[ext_resource type="PackedScene" uid="uid://bivrepnlaltux" path="res://scenes/ui/DialogueShower.tscn" id="15_jlgwf"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="18_wjjti"]
+[ext_resource type="Texture2D" uid="uid://dhrg55acdj1uw" path="res://assets/ui/outline-texture.png" id="20_rg1vr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh2fw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_t7hsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ijcd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v62it")
+}],
+"loop": true,
+"name": &"Housekeeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nvdfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ih0l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y3my1")
+}],
+"loop": true,
+"name": &"Landlord",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4bn5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tetk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_noo0p")
+}],
+"loop": true,
+"name": &"Robot",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5w32y"]
+size = Vector2(27.25, 38.7188)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0wgah"]
+texture = ExtResource("11_vfnkw")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="Theme" id="Theme_nxrch"]
+Button/font_sizes/font_size = 10
+Button/fonts/font = ExtResource("12_ttsty")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jn2qp"]
+texture = ExtResource("20_rg1vr")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[node name="NPC" type="Node2D"]
+script = ExtResource("1_mij3s")
+NPCName = "Landlord"
+
+[node name="AiImage" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qh2fw")
+animation = &"Landlord"
+autoplay = "Landlord"
+script = ExtResource("8_8k4rg")
+
+[node name="InteractArea" type="Area2D" parent="AiImage"]
+script = ExtResource("9_b08su")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AiImage/InteractArea"]
+position = Vector2(0.25, 0)
+shape = SubResource("RectangleShape2D_5w32y")
+
+[node name="DialogueShower" parent="." instance=ExtResource("15_jlgwf")]
+visible = false
+
+[node name="LevelScreen" parent="." instance=ExtResource("11_g1yg3")]
+visible = false
+
+[node name="InteractScreen" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="InteractScreen"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -42.0
+offset_right = 64.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0wgah")
+
+[node name="TName" type="Label" parent="InteractScreen/Panel"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 16.0
+offset_right = 108.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0.717647, 0.580392, 0.411765, 1)
+theme_override_fonts/font = ExtResource("12_ttsty")
+theme_override_font_sizes/font_size = 10
+text = "パケレット"
+
+[node name="PName" type="Label" parent="InteractScreen/Panel"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 28.0
+offset_right = 118.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.768627, 0.792157, 0.501961, 1)
+theme_override_fonts/font = ExtResource("12_ttsty")
+theme_override_font_sizes/font_size = 10
+text = "お手伝いさん"
+
+[node name="Decisions" type="HBoxContainer" parent="InteractScreen/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.0
+offset_top = -27.0
+offset_right = 54.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_nxrch")
+alignment = 1
+
+[node name="Dialogue" type="Button" parent="InteractScreen/Panel/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("14_2m6k6")
+text = "チャット"
+
+[node name="PlayCards" type="Button" parent="InteractScreen/Panel/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("15_1g127")
+text = "トランプ"
+
+[node name="Escape" type="TextureButton" parent="InteractScreen/Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("18_wjjti")
+texture_pressed = ExtResource("18_wjjti")
+texture_hover = ExtResource("18_wjjti")
+
+[node name="IconPanel" type="Panel" parent="InteractScreen"]
+offset_left = 138.0
+offset_top = 76.0
+offset_right = 178.0
+offset_bottom = 116.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jn2qp")
+
+[node name="CharacterIcon" type="TextureRect" parent="InteractScreen/IconPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -17.5
+offset_right = 17.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2

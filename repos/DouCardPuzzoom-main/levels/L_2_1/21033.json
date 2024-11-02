@@ -1,0 +1,35 @@
+{
+    "name": "L_2_1",
+    "id": "21033",
+    "rule": "RuleSuit",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "diamond-2",
+            "spade-2",
+            "club-5",
+            "club-5",
+            "spade-9",
+            "club-10",
+            "diamond-K",
+            "heart-A"
+        ],
+        [
+            "diamond-2",
+            "club-5",
+            "club-9",
+            "club-9",
+            "joker-BJ"
+        ]
+    ]
+}

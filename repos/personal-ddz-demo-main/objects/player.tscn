@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgtlxeysjwpbw"]
+
+[ext_resource type="Script" path="res://objects/player.gd" id="1_1gtfm"]
+[ext_resource type="Texture2D" uid="uid://j6hi8j2koror" path="res://assets/icons/icon_farmer.png" id="2_jwagn"]
+[ext_resource type="PackedScene" uid="uid://cranx30mli1hy" path="res://objects/card_place.tscn" id="3_e48w3"]
+[ext_resource type="PackedScene" uid="uid://bhua6qbtrnys" path="res://objects/lead_place.tscn" id="4_641u0"]
+[ext_resource type="PackedScene" uid="uid://b6hgi4e65ue8w" path="res://objects/call_landlord_bar.tscn" id="5_k2l8p"]
+[ext_resource type="PackedScene" uid="uid://vm6hjcu5vxvc" path="res://objects/lead_card_bar.tscn" id="6_5sifq"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_1gtfm")
+
+[node name="Face" type="Sprite2D" parent="."]
+position = Vector2(50, 50)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_jwagn")
+
+[node name="ID" type="Label" parent="."]
+offset_left = 100.0
+offset_right = 220.0
+offset_bottom = 26.0
+text = "ID: 1"
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 26.0
+offset_right = 220.0
+offset_bottom = 52.0
+text = "Score: 1000"
+vertical_alignment = 1
+
+[node name="CardPlace" parent="." instance=ExtResource("3_e48w3")]
+position = Vector2(50, 170)
+
+[node name="LeadPlace" parent="." instance=ExtResource("4_641u0")]
+position = Vector2(200, 150)
+
+[node name="CallLandlordBar" parent="." instance=ExtResource("5_k2l8p")]
+visible = false
+offset_right = 604.0
+
+[node name="LeadCardBar" parent="." instance=ExtResource("6_5sifq")]
+visible = false
+offset_right = 448.0
+offset_bottom = 56.0
+
+[node name="CallLandlordTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="LeadCardTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="CallLandlordTimer" to="." method="_on_call_landlord_timer_timeout"]
+[connection signal="timeout" from="LeadCardTimer" to="." method="_on_lead_card_timer_timeout"]

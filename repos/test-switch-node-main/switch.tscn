@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8l4i48kspiie"]
+
+[ext_resource type="Script" path="res://switch.gd" id="1_kymth"]
+[ext_resource type="Texture2D" uid="uid://brq5gtbcf62ig" path="res://node-blue.png" id="2_4fh75"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p4kjl"]
+radius = 50.0
+
+[node name="Switch" type="Node2D"]
+script = ExtResource("1_kymth")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_4fh75")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_p4kjl")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,32 @@
+{
+    "name": "L_4_1",
+    "id": "41001",
+    "rule": "RuleTwoDeck",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "spade-9",
+            "diamond-10",
+            "club-J",
+            "club-Q",
+            "club-K"
+        ],
+        [
+            "diamond-10",
+            "diamond-10",
+            "diamond-10",
+            "diamond-10",
+            "diamond-10"
+        ]
+    ]
+}

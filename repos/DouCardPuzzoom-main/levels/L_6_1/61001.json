@@ -1,0 +1,33 @@
+{
+    "name": "L_6_1",
+    "id": "61001",
+    "rule": "RuleBlackJack",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "diamond-3",
+            "diamond-2",
+            "diamond-7",
+            "diamond-6",
+            "diamond-7",
+            "diamond-5"
+        ],
+        [
+            "spade-9",
+            "diamond-10",
+            "club-J",
+            "club-Q",
+            "club-K"
+        ]
+    ]
+}

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://brtw2qmobmfhx"]
+
+[ext_resource type="Texture2D" uid="uid://d8cs0vhgjpmy" path="res://assets/objects/myroom-door.png" id="1_8n5ky"]
+[ext_resource type="Script" path="res://scripts/objects/ui/DoorArea.cs" id="1_pwcb2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g525i"]
+size = Vector2(83, 160)
+
+[node name="DoorArea" type="Area2D"]
+position = Vector2(102, -3)
+script = ExtResource("1_pwcb2")
+
+[node name="DoorSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_8n5ky")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_g525i")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdxsrsy34goal"]
+
+[ext_resource type="Script" path="res://scripts/objects/places/LeadPlace.cs" id="1_w7dl1"]
+[ext_resource type="Texture2D" uid="uid://b36v8nmvbfr2f" path="res://assets/buttons/pass-cn.png" id="2_ujeon"]
+
+[node name="LeadPlace" type="Node2D"]
+script = ExtResource("1_w7dl1")
+
+[node name="PassRect" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.5
+offset_top = -5.5
+offset_right = 12.5
+offset_bottom = 5.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ujeon")

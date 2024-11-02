@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqy0fppjn78lf"]
+
+[ext_resource type="Script" path="res://scripts/objects/places/AiPlace.cs" id="1_p1c5t"]
+[ext_resource type="PackedScene" uid="uid://qcoaoe7yqmkj" path="res://scenes/places/AiCardPlace.tscn" id="1_wmb6u"]
+[ext_resource type="PackedScene" uid="uid://bdxsrsy34goal" path="res://scenes/places/LeadPlace.tscn" id="2_wtrff"]
+[ext_resource type="Script" path="res://scripts/objects/places/AiCardPlace.cs" id="3_3wgjv"]
+
+[node name="AiPlace" type="Node2D"]
+script = ExtResource("1_p1c5t")
+
+[node name="AiCardPlace" parent="." instance=ExtResource("1_wmb6u")]
+script = ExtResource("3_3wgjv")
+
+[node name="AiLeadPlace" parent="." instance=ExtResource("2_wtrff")]

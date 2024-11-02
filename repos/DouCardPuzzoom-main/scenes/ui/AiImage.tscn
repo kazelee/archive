@@ -1,0 +1,67 @@
+[gd_scene load_steps=13 format=3 uid="uid://bwuuadkmjvkda"]
+
+[ext_resource type="Texture2D" uid="uid://dl2aun4nayy60" path="res://assets/people/landlord1.png" id="1_6cwh1"]
+[ext_resource type="Texture2D" uid="uid://b1g1rxrna2im4" path="res://assets/people/housekeeper1.png" id="1_ynv8h"]
+[ext_resource type="Texture2D" uid="uid://jn7xevo2stg5" path="res://assets/people/housekeeper2.png" id="2_ib4wb"]
+[ext_resource type="Texture2D" uid="uid://bljm20ep13j4t" path="res://assets/people/landlord2.png" id="2_u85ne"]
+[ext_resource type="Texture2D" uid="uid://bqp1j4br710q" path="res://assets/people/housekeeper3.png" id="3_4quoh"]
+[ext_resource type="Texture2D" uid="uid://cbu7sotd7t1j5" path="res://assets/people/landlord3.png" id="3_yt1sy"]
+[ext_resource type="Script" path="res://scripts/objects/ui/AiImage.cs" id="4_l6mh1"]
+[ext_resource type="Texture2D" uid="uid://ca0mc6wgefu2" path="res://assets/people/robot1.png" id="4_snoc0"]
+[ext_resource type="PackedScene" uid="uid://cdk7byw66v548" path="res://scenes/ui/Interactable.tscn" id="5_ci30j"]
+[ext_resource type="Texture2D" uid="uid://3g11b08ibhli" path="res://assets/people/robot2.png" id="5_recn0"]
+[ext_resource type="Texture2D" uid="uid://dey5xg2uhpwlc" path="res://assets/people/robot3.png" id="6_ukbe5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh2fw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ynv8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ib4wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4quoh")
+}],
+"loop": true,
+"name": &"Housekeeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6cwh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_u85ne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yt1sy")
+}],
+"loop": true,
+"name": &"Landlord",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_snoc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_recn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ukbe5")
+}],
+"loop": true,
+"name": &"Robot",
+"speed": 5.0
+}]
+
+[node name="AiImage" type="AnimatedSprite2D"]
+position = Vector2(0, -20)
+sprite_frames = SubResource("SpriteFrames_qh2fw")
+animation = &"Housekeeper"
+autoplay = "Landlord"
+script = ExtResource("4_l6mh1")
+
+[node name="InteractArea" parent="." instance=ExtResource("5_ci30j")]

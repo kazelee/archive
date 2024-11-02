@@ -1,0 +1,115 @@
+[gd_scene load_steps=7 format=3 uid="uid://d20ks70y6bfd8"]
+
+[ext_resource type="Texture2D" uid="uid://cfb6bi3iqn4y8" path="res://assets/bg_game.png" id="1_001hp"]
+[ext_resource type="Script" path="res://scenes/final_screen.gd" id="2_kbaql"]
+[ext_resource type="FontFile" uid="uid://bw3k4tce3p47u" path="res://assets/STHUPO.TTF" id="2_mntpo"]
+[ext_resource type="Texture2D" uid="uid://ct2pwxjpmcjm" path="res://assets/button/empty.png" id="3_mvn6w"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8k75p"]
+texture = ExtResource("3_mvn6w")
+texture_margin_left = 13.0577
+texture_margin_top = 12.6225
+texture_margin_right = 13.9283
+texture_margin_bottom = 11.3167
+
+[sub_resource type="Theme" id="Theme_0em0b"]
+Button/colors/font_color = Color(0.372549, 0.537255, 0.701961, 1)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("2_mntpo")
+Button/styles/normal = SubResource("StyleBoxTexture_8k75p")
+
+[node name="FinalScreen" type="TextureRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -384.0
+offset_top = -200.0
+offset_right = 384.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_001hp")
+expand_mode = 1
+script = ExtResource("2_kbaql")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 50.0
+offset_right = 100.0
+offset_bottom = 105.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_mntpo")
+theme_override_font_sizes/font_size = 50
+text = "您赢了！"
+
+[node name="ScoreTable" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.5
+offset_top = -72.0
+offset_right = 240.5
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 150
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="PlayerID" type="Label" parent="ScoreTable"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "玩家ID"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ThisScore" type="Label" parent="ScoreTable"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "本局得分"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TotalScore" type="Label" parent="ScoreTable"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "总分"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -64.0
+offset_right = 108.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_0em0b")
+theme_override_constants/separation = 200
+
+[node name="Restart" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "继续对局"
+
+[node name="BackToScreen" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "返回标题"
+
+[connection signal="pressed" from="Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Buttons/BackToScreen" to="." method="_on_back_to_screen_pressed"]

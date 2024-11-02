@@ -1,0 +1,34 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://c8ep5h0rxn28f"]
+
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="1_2kig8"]
+[ext_resource type="Texture2D" uid="uid://dccihmman037i" path="res://assets/buttons/hvr-green.png" id="1_l40qx"]
+[ext_resource type="Texture2D" uid="uid://brcau31qny864" path="res://assets/buttons/btn-green.png" id="2_wfisb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ia04h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvgl6"]
+texture = ExtResource("1_l40qx")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(0, 0, 20, 20)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_relcb"]
+texture = ExtResource("2_wfisb")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 4.0
+
+[resource]
+Button/colors/font_color = Color(0.415686, 0.431373, 0.258824, 1)
+Button/colors/font_focus_color = Color(0.415686, 0.431373, 0.258824, 1)
+Button/colors/font_hover_pressed_color = Color(0.415686, 0.431373, 0.258824, 1)
+Button/colors/font_pressed_color = Color(0.415686, 0.431373, 0.258824, 1)
+Button/font_sizes/font_size = 10
+Button/fonts/font = ExtResource("1_2kig8")
+Button/styles/focus = SubResource("StyleBoxEmpty_ia04h")
+Button/styles/hover = SubResource("StyleBoxTexture_uvgl6")
+Button/styles/normal = SubResource("StyleBoxTexture_relcb")
+Button/styles/pressed = SubResource("StyleBoxTexture_relcb")

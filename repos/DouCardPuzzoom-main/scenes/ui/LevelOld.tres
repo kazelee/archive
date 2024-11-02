@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bkp02u61x8qil"]
+
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="1_38ky3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8t1e6"]
+
+[resource]
+Button/colors/font_color = Color(0.74902, 0.498039, 0.290196, 1)
+Button/colors/font_focus_color = Color(0.74902, 0.498039, 0.290196, 1)
+Button/colors/font_hover_color = Color(0.866667, 0.592157, 0.345098, 1)
+Button/colors/font_hover_pressed_color = Color(0.74902, 0.498039, 0.290196, 1)
+Button/colors/font_pressed_color = Color(0.74902, 0.498039, 0.290196, 1)
+Button/font_sizes/font_size = 10
+Button/fonts/font = ExtResource("1_38ky3")
+Button/styles/focus = SubResource("StyleBoxEmpty_8t1e6")
+Button/styles/hover = SubResource("StyleBoxEmpty_8t1e6")
+Button/styles/normal = SubResource("StyleBoxEmpty_8t1e6")
+Button/styles/pressed = SubResource("StyleBoxEmpty_8t1e6")
+Label/colors/font_color = Color(0.596078, 0.341176, 0.12549, 1)
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_38ky3")

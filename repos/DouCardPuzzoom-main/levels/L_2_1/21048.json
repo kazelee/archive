@@ -1,0 +1,42 @@
+{
+    "name": "L_2_1",
+    "id": "21048",
+    "rule": "RuleSuit",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Robot"
+    ],
+    "cards": [
+        [
+            "heart-2",
+            "heart-2",
+            "diamond-2",
+            "diamond-4",
+            "diamond-4",
+            "diamond-4",
+            "club-5",
+            "club-6",
+            "heart-8",
+            "joker-BJ"
+        ],
+        [
+            "diamond-Q",
+            "spade-Q",
+            "heart-Q",
+            "heart-K",
+            "heart-K",
+            "heart-K",
+            "diamond-A",
+            "diamond-A",
+            "joker-CJ",
+            "joker-CJ"
+        ]
+    ]
+}

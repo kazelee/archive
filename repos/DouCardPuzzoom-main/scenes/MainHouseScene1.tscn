@@ -1,0 +1,369 @@
+[gd_scene load_steps=44 format=3 uid="uid://b1os4afi7hv8n"]
+
+[ext_resource type="Texture2D" uid="uid://yavkrqwyopjk" path="res://assets/bg/main-floor-1.png" id="1_pspj1"]
+[ext_resource type="Script" path="res://scripts/scenes/MainHouseScene1.cs" id="2_1w2bm"]
+[ext_resource type="PackedScene" uid="uid://ii87xc1k7rhs" path="res://scenes/objects/InterArea.tscn" id="2_hmnwx"]
+[ext_resource type="Texture2D" uid="uid://bjemvu1kjgo1f" path="res://assets/objects/landlord-bar.png" id="3_05s66"]
+[ext_resource type="Texture2D" uid="uid://dpk3ajavv74i" path="res://assets/objects/door_final.png" id="3_mkg3w"]
+[ext_resource type="Script" path="res://scripts/objects/NPC.cs" id="3_n2gid"]
+[ext_resource type="Texture2D" uid="uid://b1g1rxrna2im4" path="res://assets/people/housekeeper1.png" id="4_eobyr"]
+[ext_resource type="Texture2D" uid="uid://jn7xevo2stg5" path="res://assets/people/housekeeper2.png" id="5_ercr0"]
+[ext_resource type="Texture2D" uid="uid://bqp1j4br710q" path="res://assets/people/housekeeper3.png" id="6_iw4pk"]
+[ext_resource type="Texture2D" uid="uid://dl2aun4nayy60" path="res://assets/people/landlord1.png" id="7_2m1ml"]
+[ext_resource type="Texture2D" uid="uid://dot7qjjqfdtr0" path="res://assets/objects/door-landlord.png" id="7_pmjly"]
+[ext_resource type="PackedScene" uid="uid://c6byn1jum5rns" path="res://scenes/objects/Player.tscn" id="8_1ds26"]
+[ext_resource type="Texture2D" uid="uid://bljm20ep13j4t" path="res://assets/people/landlord2.png" id="8_64aaf"]
+[ext_resource type="Texture2D" uid="uid://c1d78unfw8lw8" path="res://assets/objects/door-housekeeper.png" id="8_tllh2"]
+[ext_resource type="Texture2D" uid="uid://db8vav8we1vp8" path="res://assets/objects/door-myroom.png" id="9_7evrn"]
+[ext_resource type="Texture2D" uid="uid://cbu7sotd7t1j5" path="res://assets/people/landlord3.png" id="9_er5qk"]
+[ext_resource type="Texture2D" uid="uid://xnfaon8uoet6" path="res://assets/objects/stair-1.png" id="10_86f5j"]
+[ext_resource type="Texture2D" uid="uid://ca0mc6wgefu2" path="res://assets/people/robot1.png" id="10_xcgtw"]
+[ext_resource type="Texture2D" uid="uid://3g11b08ibhli" path="res://assets/people/robot2.png" id="11_po73v"]
+[ext_resource type="PackedScene" uid="uid://bvd4i6w4y0kpb" path="res://scenes/objects/WallLight.tscn" id="11_wq5bk"]
+[ext_resource type="Texture2D" uid="uid://dey5xg2uhpwlc" path="res://assets/people/robot3.png" id="12_voi4r"]
+[ext_resource type="PackedScene" uid="uid://dnlvkjb467gdw" path="res://scenes/ui/QuestionScreen.tscn" id="13_dfvyu"]
+[ext_resource type="Script" path="res://scripts/objects/ui/AiImage.cs" id="13_um763"]
+[ext_resource type="Script" path="res://scripts/objects/ui/Interactable.cs" id="14_sq4rp"]
+[ext_resource type="PackedScene" uid="uid://cjx8b6ojras7f" path="res://scenes/ui/TempDialogueShower.tscn" id="14_ty73u"]
+[ext_resource type="PackedScene" uid="uid://bivrepnlaltux" path="res://scenes/ui/DialogueShower.tscn" id="15_8ufd4"]
+[ext_resource type="PackedScene" uid="uid://btktler3r75g6" path="res://scenes/ui/LevelScreen.tscn" id="16_w4non"]
+[ext_resource type="Texture2D" uid="uid://ulksb4c1a75q" path="res://assets/ui/outline.png" id="17_ga7ke"]
+[ext_resource type="FontFile" uid="uid://c3ttk1kdx8fn3" path="res://assets/WenQuanYi.Bitmap.Song.12px.ttf" id="18_vxj83"]
+[ext_resource type="Theme" uid="uid://b0rfyktknixop" path="res://scenes/objects/ButtonBlue.tres" id="19_y0847"]
+[ext_resource type="Theme" uid="uid://c8ep5h0rxn28f" path="res://scenes/objects/ButtonGreen.tres" id="20_5tn8c"]
+[ext_resource type="Texture2D" uid="uid://doa5ij70bs6f" path="res://assets/ui/level-stalled.png" id="21_hu2ty"]
+[ext_resource type="Texture2D" uid="uid://dhrg55acdj1uw" path="res://assets/ui/outline-texture.png" id="22_2u28o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh2fw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_eobyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ercr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iw4pk")
+}],
+"loop": true,
+"name": &"Housekeeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2m1ml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_64aaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_er5qk")
+}],
+"loop": true,
+"name": &"Landlord",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xcgtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_po73v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_voi4r")
+}],
+"loop": true,
+"name": &"Robot",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5w32y"]
+size = Vector2(27.25, 38.7188)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0wgah"]
+texture = ExtResource("17_ga7ke")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="Theme" id="Theme_nxrch"]
+Button/font_sizes/font_size = 10
+Button/fonts/font = ExtResource("18_vxj83")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jn2qp"]
+texture = ExtResource("22_2u28o")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfgfd"]
+size = Vector2(42, 188)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2x608"]
+size = Vector2(52, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ibch"]
+size = Vector2(52, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cgum"]
+size = Vector2(52, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dtyuo"]
+size = Vector2(90, 100)
+
+[node name="MainHouseScene1" type="Sprite2D"]
+position = Vector2(192, 108)
+texture = ExtResource("1_pspj1")
+script = ExtResource("2_1w2bm")
+
+[node name="Landlord" type="Node2D" parent="."]
+position = Vector2(-388, -16)
+script = ExtResource("3_n2gid")
+NPCName = "Landlord"
+
+[node name="AiImage" type="AnimatedSprite2D" parent="Landlord"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qh2fw")
+animation = &"Landlord"
+autoplay = "Landlord"
+script = ExtResource("13_um763")
+AiName = "Landlord"
+
+[node name="InteractArea" type="Area2D" parent="Landlord/AiImage"]
+script = ExtResource("14_sq4rp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landlord/AiImage/InteractArea"]
+position = Vector2(0.375, -5.96875)
+shape = SubResource("RectangleShape2D_5w32y")
+
+[node name="DialogueShower" parent="Landlord" instance=ExtResource("15_8ufd4")]
+visible = false
+
+[node name="LevelScreen" parent="Landlord" instance=ExtResource("16_w4non")]
+visible = false
+
+[node name="InteractScreen" type="CanvasLayer" parent="Landlord"]
+visible = false
+
+[node name="Panel" type="Panel" parent="Landlord/InteractScreen"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -42.0
+offset_right = 64.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0wgah")
+
+[node name="TName" type="Label" parent="Landlord/InteractScreen/Panel"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 16.0
+offset_right = 108.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0.717647, 0.580392, 0.411765, 1)
+theme_override_fonts/font = ExtResource("18_vxj83")
+theme_override_font_sizes/font_size = 10
+text = "パケレット"
+
+[node name="PName" type="Label" parent="Landlord/InteractScreen/Panel"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 28.0
+offset_right = 118.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.768627, 0.792157, 0.501961, 1)
+theme_override_fonts/font = ExtResource("18_vxj83")
+theme_override_font_sizes/font_size = 10
+text = "お手伝いさん"
+
+[node name="Decisions" type="HBoxContainer" parent="Landlord/InteractScreen/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.0
+offset_top = -27.0
+offset_right = 54.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_nxrch")
+alignment = 1
+
+[node name="Dialogue" type="Button" parent="Landlord/InteractScreen/Panel/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("19_y0847")
+text = "チャット"
+
+[node name="PlayCards" type="Button" parent="Landlord/InteractScreen/Panel/Decisions"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("20_5tn8c")
+text = "トランプ"
+
+[node name="Escape" type="TextureButton" parent="Landlord/InteractScreen/Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 20.0
+grow_horizontal = 0
+texture_normal = ExtResource("21_hu2ty")
+texture_pressed = ExtResource("21_hu2ty")
+texture_hover = ExtResource("21_hu2ty")
+
+[node name="IconPanel" type="Panel" parent="Landlord/InteractScreen"]
+offset_left = 138.0
+offset_top = 76.0
+offset_right = 178.0
+offset_bottom = 116.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jn2qp")
+
+[node name="CharacterIcon" type="TextureRect" parent="Landlord/InteractScreen/IconPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -17.5
+offset_right = 17.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LandlordBar" type="Sprite2D" parent="."]
+position = Vector2(-387, 28)
+scale = Vector2(2, 2)
+texture = ExtResource("3_05s66")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-579, 114, -505, 54, -303, 54, -298, 10, 450, 10, 577, 111, 577, -112, -578, -110)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-583, 107, 581, 107, 581, 111, -583, 112)
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="OutDoor" parent="Doors" instance=ExtResource("2_hmnwx")]
+position = Vector2(-537, -1)
+
+[node name="Sprite2D" parent="Doors/OutDoor" index="0"]
+position = Vector2(-4, 3)
+scale = Vector2(2, 2)
+texture = ExtResource("3_mkg3w")
+
+[node name="CollisionShape2D" parent="Doors/OutDoor" index="1"]
+position = Vector2(-4, 3)
+shape = SubResource("RectangleShape2D_cfgfd")
+
+[node name="LandlordDoor" parent="Doors" instance=ExtResource("2_hmnwx")]
+position = Vector2(-234, -40)
+
+[node name="Sprite2D" parent="Doors/LandlordDoor" index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("7_pmjly")
+
+[node name="CollisionShape2D" parent="Doors/LandlordDoor" index="1"]
+shape = SubResource("RectangleShape2D_2x608")
+
+[node name="HouseKeeperDoor" parent="Doors" instance=ExtResource("2_hmnwx")]
+position = Vector2(-48, -40)
+
+[node name="Sprite2D" parent="Doors/HouseKeeperDoor" index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("8_tllh2")
+
+[node name="CollisionShape2D" parent="Doors/HouseKeeperDoor" index="1"]
+shape = SubResource("RectangleShape2D_2ibch")
+
+[node name="MyDoor" parent="Doors" instance=ExtResource("2_hmnwx")]
+position = Vector2(135, -40)
+
+[node name="Sprite2D" parent="Doors/MyDoor" index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("9_7evrn")
+
+[node name="CollisionShape2D" parent="Doors/MyDoor" index="1"]
+shape = SubResource("RectangleShape2D_2cgum")
+
+[node name="Stairs" parent="Doors" instance=ExtResource("2_hmnwx")]
+position = Vector2(350, -40)
+
+[node name="Sprite2D" parent="Doors/Stairs" index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("10_86f5j")
+
+[node name="CollisionShape2D" parent="Doors/Stairs" index="1"]
+shape = SubResource("RectangleShape2D_dtyuo")
+
+[node name="Player" parent="." instance=ExtResource("8_1ds26")]
+position = Vector2(350, 50)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = -384
+limit_top = 0
+limit_right = 768
+limit_bottom = 216
+drag_horizontal_enabled = true
+editor_draw_drag_margin = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.784314, 0.72549, 0.694118, 1)
+
+[node name="WallLights" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="WallLight" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(-276, -86)
+
+[node name="WallLight2" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(-539, -110)
+
+[node name="WallLight3" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(-96, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight4" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(84, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight5" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(264, -86)
+scale = Vector2(1.04545, 1.02)
+
+[node name="WallLight6" parent="WallLights" instance=ExtResource("11_wq5bk")]
+position = Vector2(539, -110)
+scale = Vector2(1.04545, 1.02)
+
+[node name="QuestionScreen" parent="." instance=ExtResource("13_dfvyu")]
+visible = false
+
+[node name="TempDialogueShower" parent="." instance=ExtResource("14_ty73u")]
+visible = false
+
+[editable path="Doors/OutDoor"]
+[editable path="Doors/LandlordDoor"]
+[editable path="Doors/HouseKeeperDoor"]
+[editable path="Doors/MyDoor"]
+[editable path="Doors/Stairs"]

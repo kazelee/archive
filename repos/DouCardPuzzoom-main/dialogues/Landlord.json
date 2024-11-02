@@ -1,0 +1,424 @@
+{
+    "D_LL_HI": [
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_1"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HI_2"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_3"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HI_4"
+        },
+        {
+            "icon": "I_LL_2.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_5"
+        },
+        {
+            "icon": "I_ME_4.png",
+            "name": "YOU",
+            "content": "D_LL_HI_6"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_7"
+        },
+        {
+            "icon": "I_ME_5.png",
+            "name": "YOU",
+            "content": "D_LL_HI_8"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HI_9"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_10"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_LL_HI_11"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HI_12"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_13"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HI_14"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_15"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HI_16"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_17"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HI_18"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_HI_19"
+        }
+    ],
+    "D_LL_HOTEL": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_1"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_2"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_3"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_4"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_5"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_6"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_7"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_8"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_9"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_10"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_11"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_12"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_13"
+        },
+        {
+            "icon": "I_LL_4.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_14"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_15"
+        },
+        {
+            "icon": "I_LL_2.png",
+            "name": "C_LL",
+            "content": "D_LL_HOTEL_16"
+        },
+        {
+            "icon": "I_ME_4.png",
+            "name": "YOU",
+            "content": "D_LL_HOTEL_17"
+        }
+    ],
+    "D_LL_DOU": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_DOU_0"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_1"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_2"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_3"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_LL_DOU_4"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_5"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_6"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_7"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_DOU_8"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_DOU_9"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_DOU_10"
+        }
+    ],
+    "D_LL_RULES": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_1"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_2"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_3"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_4"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_5"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_6"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_7"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_8"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_9"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_10"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_11"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_12"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_13"
+        },
+        {
+            "icon": "I_LL_3.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_14"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_15"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_RULES_16"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_RULES_17"
+        }
+    ],
+    "D_LL_DIA": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_1"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_2"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_3"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_4"
+        },
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_5"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_6"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_7"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_8"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_9"
+        },
+        {
+            "icon": "I_ME_3.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_10"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_11"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_DIA_12"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_DIA_13"
+        }
+    ],
+    "D_LL_LL0": [
+        {
+            "icon": "I_ME_1.png",
+            "name": "YOU",
+            "content": "D_LL_LL0_1"
+        },
+        {
+            "icon": "I_LL_2.png",
+            "name": "C_LL",
+            "content": "D_LL_LL0_2"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_LL0_3"
+        },
+        {
+            "icon": "I_LL_1.png",
+            "name": "C_LL",
+            "content": "D_LL_LL0_4"
+        },
+        {
+            "icon": "I_ME_2.png",
+            "name": "YOU",
+            "content": "D_LL_LL0_5"
+        }
+    ]
+}

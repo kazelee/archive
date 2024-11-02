@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://bcnsaxe0o48dq"]
+
+[ext_resource type="PackedScene" uid="uid://c5qsg1x5o4anc" path="res://scenes/GameScene.tscn" id="1_y7r7y"]
+[ext_resource type="PackedScene" uid="uid://b8d1idorvhlc8" path="res://scenes/ui/PlayerLeft.tscn" id="2_4omon"]
+[ext_resource type="Script" path="res://scripts/GameScene2P.cs" id="2_kgvh5"]
+[ext_resource type="PackedScene" uid="uid://16qvd7fi7yh0" path="res://scenes/place/LeadPlace.tscn" id="3_4424r"]
+[ext_resource type="Script" path="res://scripts/units/AILeadUnit.cs" id="4_goehg"]
+[ext_resource type="Script" path="res://scripts/units/places/AICardPlace.cs" id="5_k8g26"]
+[ext_resource type="Script" path="res://scripts/units/places/AILeadPlace.cs" id="7_4cbnx"]
+
+[node name="GameScene2P" instance=ExtResource("1_y7r7y")]
+script = ExtResource("2_kgvh5")
+
+[node name="PlayerLeft" parent="." index="3" instance=ExtResource("2_4omon")]
+offset_left = -910.0
+offset_top = -440.0
+offset_right = -910.0
+offset_bottom = -440.0
+
+[node name="AILeadUnit" type="Node2D" parent="." index="5"]
+script = ExtResource("4_goehg")
+
+[node name="AICardPlace" type="Node2D" parent="AILeadUnit" index="0"]
+position = Vector2(0, -350)
+script = ExtResource("5_k8g26")
+
+[node name="AILeadPlace" parent="AILeadUnit" index="1" instance=ExtResource("3_4424r")]
+script = ExtResource("7_4cbnx")

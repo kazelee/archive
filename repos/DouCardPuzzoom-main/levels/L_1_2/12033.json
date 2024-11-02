@@ -1,0 +1,46 @@
+{
+    "name": "L_1_2",
+    "id": "12033",
+    "rule": "RuleOri",
+    "mode": "Normal",
+    "pass_limit": 999,
+    "lead_limit": 999,
+    "pass_request": 0,
+    "lead_request": 0,
+    "landlord": "YOU",
+    "number": 2,
+    "players": [
+        "YOU",
+        "Landlord"
+    ],
+    "cards": [
+        [
+            "heart-2",
+            "heart-8",
+            "heart-8",
+            "club-Q",
+            "diamond-K",
+            "club-A",
+            "heart-A",
+            "joker-BJ",
+            "joker-CJ"
+        ],
+        [
+            "club-2",
+            "spade-3",
+            "club-3",
+            "club-6",
+            "diamond-8",
+            "spade-8",
+            "spade-9",
+            "spade-J",
+            "diamond-J",
+            "heart-J",
+            "heart-Q",
+            "heart-K",
+            "joker-BJ",
+            "joker-BJ",
+            "joker-CJ"
+        ]
+    ]
+}
