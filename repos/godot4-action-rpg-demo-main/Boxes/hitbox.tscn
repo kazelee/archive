@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bibn4sfki8uk5"]
+
+[ext_resource type="Script" path="res://Boxes/hitbox.gd" id="1_5pcmn"]
+
+[node name="Hitbox" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_5pcmn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
