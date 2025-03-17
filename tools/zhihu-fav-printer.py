@@ -1,50 +1,66 @@
-'''bilibili 关注导出成 md 文件（附头像）'''
-
 import requests
 import json
 import time
-import re
 
-def validateTitle(title):
-    """将字符串中不能作为标题的字符转为下划线"""
-    rstr = r"[\/\\\:\*\?\"\<\>\|]"  # '/ \ : * ? " < > |'
-    new_title = re.sub(rstr, "_", title)  # 替换为下划线
-    return new_title
+# url = "https://www.zhihu.com/api/v4/collections/00000000/items?offset=0&limit=20"
 
 headers = {
-    "cookie": "", # F12->网络->搜索follow->Ctrl+R刷新->找到"followings?order=..."->见headers
+    "cookie": "", # F12->网络->搜索items->Ctrl+R刷新->找到"items?offset=..."->见headers
     "user-agent": "" # 获取方式同上
 }
 
-p_id = int(input("请输入用户ID: "))
-page_max = int(input("请输入关注的页数: "))
+fav_id = int(input("请输入收藏夹ID: "))
+page_max = int(input("请输入收藏夹的页数: "))
+fav_name = input("请输入收藏夹名称：")
+fav_info = input("请输入收藏夹简介：")
 
-info_title = str(p_id)
-output_doc = ''
+# info_title = str(fav_id)
+info_title = fav_name
+
+output_doc = f'<p align="center"><b>{fav_name}</b></p>\n<p align="center">{fav_info}</p>\n<table align="center">\n'
 col_count = 0
 
-# https://api.bilibili.com/x/relation/followings?order=desc&order_type=&vmid={{pid}}&pn=1&ps=24&gaia_source=main_web&web_location=333.1387
-
 for page_index in range(page_max):
-    url = "https://api.bilibili.com/x/relation/followings?order=desc&order_type=&vmid=" + str(p_id) + "&pn=" + str(page_index + 1) + "&ps=24&gaia_source=main_web&web_location=333.1387"
+    url = "https://www.zhihu.com/api/v4/collections/" + str(fav_id) + "/items?offset=" + str(page_index * 20) + "&limit=20"
     data_text = requests.get(url=url, headers=headers).text
     data = json.loads(data_text)
+    
+    # 录入一页信息
+    pages = data["data"]
 
-    uploaders = data["data"]["list"]
+    for page in pages:
 
-    for uploader in uploaders:
+        content = page["content"]
+        page_type = content["type"]
+        page_url = ""
+        page_title = ""
 
-        local_up_data = f'''
-![|L|75]({uploader["face"]})
-[{uploader["uname"]}](https://space.bilibili.com/{uploader["mid"]}/)
-{uploader["sign"]}
-'''
+        author_name = ""
+        author_url = ""
+        author_face = ""
 
-        output_doc += local_up_data
+        if page_type == "answer":
+            page_title = content["question"]["title"]
+            page_url = content["url"]
+        elif page_type == "article":
+            page_title = content["title"]
+            page_url = content["url"]
+        else:
+            page_title = content["excerpt_title"]
+            page_url = content["url"]
+
+        author_name = content["author"]["name"]
+        author_url = content["url"]
+        author_face = content["author"]["avatar_url"]
+
+        output_doc = output_doc + '\t<tr>\n\t\t<td>\n\t\t\t<img src="' + author_face + '" height=25 width=25 />\n'
+        output_doc = output_doc + '\t\t\t<a href="' + author_url + '">' + author_name + '</a>\n\t\t</td>\n\t\t<td>\n'
+        output_doc = output_doc + '\t\t\t<a href="' + page_url + '">' + page_title + '</a><br/>\n\t\t</td>\n\t</tr>\n'
 
     time.sleep(1)
 
-info_title += '.md'
+output_doc += '</table>'
+info_title += '.html'
 
 with open(info_title, 'w', encoding='utf-8') as f:
     f.write(output_doc)
